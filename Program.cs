@@ -7,10 +7,10 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            string s = "123456579";
 
-            IList<int> list = Solution842.SplitIntoFibonacci(s);
+            int result = Solution62.UniquePaths(51, 9);
 
+            Console.WriteLine(result);
             Console.WriteLine("Hello World!");
         }
     }
