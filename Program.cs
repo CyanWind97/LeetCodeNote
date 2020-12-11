@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace LeetCodeNote
@@ -8,7 +8,7 @@ namespace LeetCodeNote
         static void Main(string[] args)
         {
 
-            int result = Solution62.UniquePaths(51, 9);
+            string result = Solution642.PredictPartyVictory("DRRDRDRDRDDRDRDR");
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");

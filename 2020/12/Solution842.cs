@@ -11,7 +11,6 @@ namespace LeetCodeNote
     /// </summary>
     public static class Solution842
     {
-        // 官方解答：回溯法 + 减枝
     
         public static IList<int> SplitIntoFibonacci(string S) {
             IList<int> result = new List<int>();

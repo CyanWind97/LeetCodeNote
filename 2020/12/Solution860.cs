@@ -2,7 +2,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 860
-    /// title: ÄûÃÊË®ÕÒÁã
+    /// title: æŸ æª¬æ°´
     /// problems: https://leetcode-cn.com/problems/lemonade-change/
     /// date: 20201210
     /// </summary>

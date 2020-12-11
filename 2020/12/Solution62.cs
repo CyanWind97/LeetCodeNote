@@ -8,7 +8,7 @@ namespace LeetCodeNote
     public static class Solution62
     {
         
-        // Ñî»ÔÈý½Ç£¨¶þÏîÊ½ÏµÊý£© ÊýÑ§½â
+        // æ¨è¾‰ä¸‰è§’ï¼ˆäºŒé¡¹å¼ç³»æ•°ï¼‰ æ•°å­¦è§£
         public static int UniquePaths(int m, int n) {
             if(n > m)
                 return UniquePaths(n, m); 
@@ -27,7 +27,7 @@ namespace LeetCodeNote
             return (int)result;
         }
 
-        // ¶¯Ì¬¹æ»®
+        // åŠ¨æ€è§„åˆ’
         public static int UniquePaths_1(int m, int n) {
 
             int[ , ] matrix = new int[m, n];
@@ -50,7 +50,7 @@ namespace LeetCodeNote
             return matrix[m -1, n - 1];
         }
 
-        // ¹Ù·½½â´ð
+        // å®˜æ–¹è§£ç­”
         public static int UniquePaths_2(int m, int n) {
             if(n > m)
                 return UniquePaths_2(n, m); 
