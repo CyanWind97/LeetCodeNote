@@ -7,8 +7,9 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
+            int[] nums = {1,7,4,9,2,5};
 
-            int result = Solution62.UniquePaths(51, 9);
+            var result = Solution376.WiggleMaxLength(nums);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
