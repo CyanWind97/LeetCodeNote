@@ -9,10 +9,9 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            //var watchedVideos = JsonSerializer.Deserialize<IList<IList<string>>>(File.ReadAllText("test.json"));
-            //var friends = JsonSerializer.Deserialize<int[][]>(File.ReadAllText("test2.json"));
+            int[] nums = {1,7,4,9,2,5};
 
-            //var result = Solution1311.WatchedVideosByFriends(watchedVideos, friends, 20, 2);
+            var result = Solution376.WiggleMaxLength(nums);
 
             // Console.WriteLine(result);
             Console.WriteLine("Hello World!");
