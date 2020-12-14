@@ -47,5 +47,30 @@ namespace LeetCodeNote
             return dic.Values.ToList();
         }
 
+
+        // 参考解答：质数积，样例字符长度不足
+        public static IList<IList<string>> GroupAnagrams_2(string[] strs) {
+            int[] charHash = {
+                2,  3,  5,  7,  11, 
+                13, 17, 19, 23, 29,
+                31, 37, 41, 43, 47, 
+                53, 59, 61, 67, 71,
+                73, 79, 83, 89, 97, 
+                101 
+            } ;
+            Dictionary<long, IList<string>> dic = new Dictionary<long, IList<string>>();
+            foreach(string s in strs) {
+                long key = 1;
+                foreach(char c in s) {
+                    key = key * charHash[c - 'a'];
+                }
+                if(!dic.ContainsKey(key))
+                    dic.Add(key, new List<string>());
+                dic[key].Add(s);
+            }
+            
+            return dic.Values.ToList();
+        }
+
     }
 }
