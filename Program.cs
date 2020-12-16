@@ -9,11 +9,9 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            int[] nums = {1,7,4,9,2,5};
+            var result = Solution793.PreimageSizeFZF(28246);
 
-            var result = Solution376.WiggleMaxLength(nums);
-
-            // Console.WriteLine(result);
+            Console.WriteLine(result);
             Console.WriteLine("Hello World!");
         }
     }
