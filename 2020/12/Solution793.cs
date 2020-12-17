@@ -1,7 +1,7 @@
 using System;
 namespace LeetCodeNote
 {
-    // <summary>
+    /// <summary>
     /// no: 893
     /// title: 阶乘函数后K个零
     /// problems: https://leetcode-cn.com/problems/preimage-size-of-factorial-zeroes-function/
@@ -9,6 +9,14 @@ namespace LeetCodeNote
     /// </summary>
     public static class Solution793
     {   
+        // 假设 K + n =  5x + x + x/5 + x/25 + ... (n >= 0)
+        // (K + n) -  (K + n) / 5 = 5x
+        // 故有 K - K/5 + i = 5y (y = 5x 或 y = 5(x-1))
+        // 当y为5^a的倍数时, 跳过的数量为a, 即y % 5 == 0 时，跳过的数count++;
+        // 例如y = 25, 有25 * 4 = 100; 即 y % 5 = 0; count = 1; 
+        // y = y / 5 = 5, y % 5 = 0; count = 2;
+        // 令sum = 5y + y + y/5 + ....
+        // 当 K 属于 [sum - count, sum) U (sum + 4, ...)时，返回0，否则返回5
         public static int PreimageSizeFZF(int K) {
             int x = K -  K / 5;
             while(x % 5 != 0){
@@ -26,19 +34,9 @@ namespace LeetCodeNote
                         flag = false;
                 }
                 x /= 5;
-                if(x == 0 && K > sum) {
-                    Console.WriteLine(sum);
-                    x = K - K/5 + 5;
-                    while(x % 5 != 0){
-                        x++;
-                    }
-                    sum = 0;
-                    count = 0;
-                    flag = true;
-                }
             }
 
-            return (K >= sum - count && K < sum) ? 0 : 5;
+            return ((K >= sum - count && K < sum) || (K > sum && K - sum > 4)) ? 0 : 5;
         }
 
 

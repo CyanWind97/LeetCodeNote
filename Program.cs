@@ -9,7 +9,7 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            var result = Solution793.PreimageSizeFZF(28246);
+            var result = Solution793.PreimageSizeFZF(8323323);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
