@@ -20,5 +20,17 @@ namespace LeetCodeNote
                 }
             }
         }
+
+
+        //参考: 元组复制交换
+        public static void Rotate_1(int[][] matrix) {
+            int n = matrix.Length;
+            for(int i = 0; i < n / 2; i++) {
+                for(int j = i; j < n - i - 1; j++) {
+                    (matrix[i][j], matrix[n -j - 1][i], matrix[n - i - 1][n - j - 1], matrix[j][n - i - 1])
+                    = (matrix[n -j - 1][i], matrix[n - i - 1][n - j - 1], matrix[j][n - i - 1], matrix[i][j]);
+                }
+            }
+        }
     }
 }

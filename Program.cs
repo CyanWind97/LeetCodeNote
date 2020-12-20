@@ -9,7 +9,7 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            var result = Solution793.PreimageSizeFZF(8323323);
+            var result = Solution316.RemoveDuplicateLetters("bcabc");
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
