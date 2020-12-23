@@ -43,15 +43,18 @@ namespace LeetCodeNote
         //参考解答
         public static int FirstUniqChar_1(string s) {
             int[] count = new int[26];
+            char[] chars = s.ToCharArray();
+            int length = chars.Length;
 
-            foreach(char c in s)
+            for(int i = 0; i <length; i++)
             {
-                count[c - 'a']++;
+                count[chars[i] - 'a']++;
             }
 
-            for (int i = 0; i < s.Length; i++)
+
+            for (int i = 0; i < length; i++)
             {
-                if (count[s[i] - 'a'] == 1) 
+                if (count[chars[i] - 'a'] == 1) 
                     return i;
             }
 
