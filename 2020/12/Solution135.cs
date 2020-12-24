@@ -113,26 +113,26 @@ namespace LeetCodeNote
             
             int sum = 1;
             int pre = 1;
-            int desCount = 0;
+            int desc = 0;
             for(int i = 1; i < length; i++){
                 if(ratings[i] >= ratings[i - 1]) {
-                    if(desCount > 0){
-                        sum += ((desCount + 1) * desCount) /2;
-                        if(desCount >= pre)
-                            sum += (desCount - pre + 1);
+                    if(desc > 0){
+                        sum += ((desc + 1) * desc) /2;
+                        if(desc >= pre)
+                            sum += (desc - pre + 1);
                         
                         pre = 1;
-                        desCount = 0;
+                        desc = 0;
                     }
                     pre = ratings[i] == ratings[i-1] ? 1 : pre + 1;
                     sum += pre;
                 }else
-                    desCount++;
+                    desc++;
             }
-            if(desCount > 0){
-                sum += ((desCount + 1) * desCount) /2;
-                if(desCount >= pre)
-                    sum += (desCount - pre + 1);   
+            if(desc > 0){
+                sum += ((desc + 1) * desc) /2;
+                if(desc >= pre)
+                    sum += (desc - pre + 1);   
             }
 
             return sum;
