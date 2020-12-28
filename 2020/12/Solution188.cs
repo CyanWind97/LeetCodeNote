@@ -16,64 +16,7 @@ namespace LeetCodeNote
     public static class Solution188
     {
         public static int MaxProfit(int k, int[] prices) {
-            if(k == 0)
-                return k;
-            int length = prices.Length;
-            if(length <= 1)
-                return 0;
-            int[] profits = new int[length];
-            int[] delta = new int[length];
-            int buy = prices[0], sell = prices[0];
-            int preBuy = prices[0], preSell = prices[0];
-
-            for(int i = 1; i < length; i++){
-                if(prices[i] < prices[i - 1]){
-                    if(sell > buy){
-                        if(sell > preSell && buy >= preBuy){
-                            delta[i] = preSell - buy;
-                            preSell = sell;
-                        }else if(sell <= preSell && sell - buy < preSell -preBuy){
-                            delta[i] = sell - buy;
-                        }else{
-                            delta[i] = preSell - preBuy;
-                            preBuy = buy;
-                            preSell = sell;
-                        }
-                    }
-
-                    profits[i - 1] = sell - buy;
-                    buy = prices[i];
-                    sell = prices[i];
-                }else if(prices[i] > sell){
-                    sell = prices[i];
-                }
-            }
-
-            if(sell > buy ){
-                profits[length - 1] = sell - buy;
-                delta[length - 1] = sell > preSell
-                        ? buy < preBuy
-                            ? preSell - preBuy
-                            : preSell - buy
-                        : Math.Min(sell - buy, preSell - preBuy);
-            }
             
-            int count = 0;
-            int result = 0;
-            for(int i = 0; i < length; i++){
-                if(profits[i] > 0){
-                    count++;
-                    result += profits[i];
-                }
-            }
-            if(k < count)
-                result -= delta.Where(x => x > 0).OrderBy(x => x).Take(count - k).Sum();
-
-
-            return result;
-        }
-
-        public static int MaxProfit_1(int k, int[] prices) {
             if(k == 0)
                 return k;
             int length = prices.Length;
@@ -107,6 +50,7 @@ namespace LeetCodeNote
             if(k < count){
                 int[] delta = new int[count];
                 int[] type = new int[count];
+                delta[0] = sells[0] - buys[0];
                 for(int i = 1; i < count; i++){
                     if(sells[i] > sells[i - 1] && buys[i] >= buys[i - 1]){
                         delta[i] = sells[i - 1] - buys[i];
@@ -130,7 +74,8 @@ namespace LeetCodeNote
                             if(delta[j] < min || min == 0){
                                 min = delta[j];
                                 index = j;
-                            }
+                            }else if(delta[j] == min && sells[index] > sells[j])
+                                index = j;
                         }
                     }
                     
@@ -144,13 +89,17 @@ namespace LeetCodeNote
                     int maxIndex = index;
                     if(tmpType == 1){
                         index--;
-                        delta[index] = 0;
+                        delta[index] = sells[0] - buys[0];
                     }
                     sells.RemoveAt(index);
                     
                     count--;
-                    if(k == count || index == 0){
-                        delta[index] = 0;
+                    if(k == count )
+                        break;
+
+                    if(index == 0){
+                        delta[0] = sells[0] - buys[0];
+                        type[0] = 0;
                         continue;
                     }
 
@@ -158,17 +107,14 @@ namespace LeetCodeNote
                         if(sells[j] > sells[j - 1] && buys[j] >= buys[j - 1]){
                             delta[j] = sells[j - 1] - buys[j];
                             type[j] = 1;
-                        }else if(sells[j] <= sells[j - 1] 
-                            && sells[j] - buys[j] < sells[j - 1] - buys[j - 1]){
-                            delta[j] = sells[j] - buys[j];
-                            type[j] = 0;
                         }else{
-                            if(delta[j - 1] == 0 || sells[j - 1] - buys[j - 1] < delta[j - 1]){
-                                delta[j] = 0;
-                                type[j] = 0;
+                            if(sells[j] - buys[j] >= sells[j - 1] - buys[j - 1] 
+                            && sells[j - 1] - buys[j - 1] < delta[j - 1]){
                                 delta[j - 1] = sells[j - 1] - buys[j - 1];
                                 type[j - 1] = 0;
                             }
+                            delta[j] = sells[j] - buys[j];
+                            type[j] = 0;
                         }
                     }
                 }
@@ -177,27 +123,60 @@ namespace LeetCodeNote
             return sells.Sum() - buys.Sum();
         }
     
-        public static void WriteText(string tag, int count, int index, List<int> buys, List<int> sells, int[] delta, int[] type){
-            string path = @"test.txt";
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine();
-            sb.AppendLine($"{count}\t{tag}:");
-            sb.AppendLine($"index:\t{index}");
-            StringBuilder b = new StringBuilder("buy:");
-            StringBuilder s = new StringBuilder("sell:");
-            StringBuilder d = new StringBuilder("delta:");
-            StringBuilder t = new StringBuilder("type:");
+        // 参考解答, 官方解答, 动态规划
+         public static int MaxProfit_1(int k, int[] prices) {
 
-            int minIndex = index - 2 > 0 ? index - 2 : 0;
-            int maxIndex =  index + 2 < buys.Count() - 1 ? index + 2 : buys.Count() - 1;
-            for(int i = minIndex; i <= maxIndex; i++){
-                b.Append($"\t{buys[i]}");
-                s.Append($"\t{sells[i]}");
-                d.Append($"\t{delta[i]}");
-                t.Append($"\t{type[i]}");
+            int n = prices.Length;
+            if (n==0) 
+                return 0;
+            if (k > n/2) 
+                k = n/2; // each transaction takes 2 days
+
+            // all possibilities
+            // # day, # transactions executed, 1-with stock/0-no stock
+            // final answer would be dp[n,k,0]
+            int[,,] dp = new int[n,k+1,2];
+
+            for(int i=0; i<n; i++)
+            {
+                for (int j=0;j<=k;j++)
+                {
+                    // Base case1: day1
+                    if (i==0)
+                    {
+                        dp[i,j,0] = 0;          // hold NO stock on day1: profit=0
+                        dp[i,j,1] = -prices[0]; // hold stock on day1: profit=-price[0]
+                        continue;
+                    }
+                    //Base case2: no transaction
+                    if (j==0)
+                    {
+                        dp[i,0,0] = 0;            // hold NO stock before first transaction: profit=0
+                        dp[i,0,1] = int.MinValue; // hold stock before first transaction: impossible
+                        continue;
+                    }
+
+                    // all other cases:, where i-1 and j-1 are valid
+                    // if I have NO stock in hand by the end of today, I either
+                    // sold my stock, if I had some yesterday
+                    // or just hold, if I had none yesterday
+                    dp[i,j,0] = Math.Max(         
+                        dp[i-1,j,1] + prices[i],  // I had stock yesterday, I sell it today
+                        dp[i-1,j,0]               // I had no stock yesterday, I hold today
+                    );
+
+                    // if I DO have stock in hand by the end of today, I either
+                    // buy new stock, if I had none yesterday (#transactions+1)
+                    // or just hold, if I had some yesterday
+                    dp[i,j,1] = Math.Max(
+                        dp[i-1,j-1,0] - prices[i],  // I had no stock yesterday, I buy today
+                        dp[i-1,j,1]                 // I had stock yesterday, I hold today
+                    );
+                }
             }
-            sb.AppendLine(b.ToString()).AppendLine(s.ToString()).AppendLine(d.ToString()).AppendLine(t.ToString());
-            File.AppendAllText(path,sb.ToString());
-        } 
+
+            return dp[n-1,k,0];
+        }
+
     }
 }
