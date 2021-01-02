@@ -10,9 +10,9 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            int[] nums = {};
-            int n = 7;
-            var result = Solution330.MinPatches(nums, n);
+            int[] nums = {9,8,7,6,5,4,3,2,1};
+            int k = 3;
+            var result = Solution239.MaxSlidingWindow_1(nums, k);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
