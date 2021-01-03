@@ -72,7 +72,7 @@ namespace LeetCodeNote
             return result;
         }
 
-        // 参考解答： 单调队列 LinkedList
+        // 参考解答： 单调队列(双端队列) LinkedList
         public static int[] MaxSlidingWindow_2(int[] nums, int k) {
             int length = nums.Length;
             int n =  length - k + 1;
