@@ -123,11 +123,10 @@ namespace LeetCodeNote
                             : -1;
             }
 
-
             return result;
         }
 
-        // 官方解答 查并集
+        // 官方解答 并查集 一般用于关系查找
         public static double[] CalcEquation_2(IList<IList<string>> equations, double[] values, IList<IList<string>> queries) {
             int eLength = values.Length;
             Dictionary<string, int> map = new Dictionary<string, int>();
