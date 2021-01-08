@@ -11,21 +11,10 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            int[] nums = {2,1};
-            IList<string>[] equations = {
-                new string[]{"x1","x2"},
-                new string[]{"x2","x3"},
-                new string[]{"x1","x4"},
-                new string[]{"x2","x5"}
-            };
-            double[] values = {3.0,0.5,3.4,5.6};
-            IList<string>[] queries = { 
-                new string[]{"x2","x4"},
-                new string[]{"x3","x4"},
-                new string[]{"x2","x1"},
-                new string[]{"x4","x3"},
-            };
-            var result = Solution399.CalcEquation_2(equations, values, queries);
+            int[] nums = {1,2,3,4,5,6};
+            int k = 4;
+            Solution189.Rotate_1(nums, k);
+            var result = 0;
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
