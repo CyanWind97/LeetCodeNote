@@ -124,17 +124,14 @@ namespace LeetCodeNote
         }
     
         // 参考解答, 官方解答, 动态规划
-         public static int MaxProfit_1(int k, int[] prices) {
+        public static int MaxProfit_1(int k, int[] prices) {
 
             int n = prices.Length;
             if (n==0) 
                 return 0;
             if (k > n/2) 
-                k = n/2; // each transaction takes 2 days
+                k = n/2; 
 
-            // all possibilities
-            // # day, # transactions executed, 1-with stock/0-no stock
-            // final answer would be dp[n,k,0]
             int[,,] dp = new int[n,k+1,2];
 
             for(int i=0; i<n; i++)
@@ -177,6 +174,35 @@ namespace LeetCodeNote
 
             return dp[n-1,k,0];
         }
+        
+        // 更简洁的写法
+        // 当天买入再卖出收益为0，不影响解答
+        public static int MaxProfit_2(int k, int[] prices) {
+            int length = prices.Length;
+            if (length <= 1 || k == 0) 
+                return 0;
+            if (k > length/2) 
+                k = length/2;
 
+            int[] buys = new int[k];
+            int[] sells = new int[k];
+            
+            for(int i = 0; i < k; i++){
+                buys[i] = -prices[0];
+                sells[i] = 0;
+            }
+
+            for(int i = 1; i < length; i++){
+                buys[0] = Math.Max(buys[0], -prices[i]);
+                sells[0] = Math.Max(sells[0], buys[0] + prices[i]);
+
+                for(int j = 1; j < k; j++){
+                    buys[j] = Math.Max(buys[j], sells[j - 1] - prices[i]);
+                    sells[j] = Math.Max(sells[j], buys[j] + prices[i]);
+                }
+            }
+
+            return sells[k - 1];
+        }
     }
 }
