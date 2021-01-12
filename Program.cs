@@ -13,18 +13,21 @@ namespace LeetCodeNote
         {
             int[] nums = {3,2,6,5,0,3};
             int k = 4;
-            string s = "pwqlmqm";
-            List<IList<int>> pairs = new List<IList<int>>(){
-                new int[]{5,3},
-                new int[]{3,0},
-                new int[]{5,1},
-                new int[]{1,1},
-                new int[]{1,5},
-                new int[]{3,0},
-                new int[]{0,2}
+            int n = 8;
+            int m = 2;
+            int[] group = {-1,-1,1,0,0,1,0,-1};
+            List<IList<int>> beforeItems = new List<IList<int>>(){
+                new int[]{},
+                new int[]{6},
+                new int[]{5},
+                new int[]{6},
+                new int[]{3,6},
+                new int[]{},
+                new int[]{},
+                new int[]{}
             };
           
-            var result = Solution1202.SmallestStringWithSwaps_1(s, pairs);
+            var result = Solution1203.SortItems(n, m, group, beforeItems);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
