@@ -14,6 +14,7 @@ namespace LeetCodeNote
     public static class Solution1203
     {
         // 待补
+        // you need study more
         // 官方解答 拓扑排序
         public static int[] SortItems(int n, int m, int[] group, IList<IList<int>> beforeItems) {
             IList<int>[] groupItem = new IList<int>[n + m];
@@ -30,16 +31,17 @@ namespace LeetCodeNote
             int[] id = new int[n + m];
             
             
-            Array.Fill(itemGraph, new List<int>());
             for(int i = 0; i < m + n; i++){
                 groupItem[i] = new List<int>();
                 groupGraph[i] = new List<int>();
                 id[i] = i;
             }
 
+
             int groupId = m;
             // 给未分配项目分配groupId
             for(int i = 0; i < n; i++){
+                itemGraph[i] = new List<int>();
                 if(group[i] == -1){
                     group[i] = groupId;
                     groupId++;
