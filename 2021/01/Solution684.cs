@@ -13,7 +13,6 @@ namespace LeetCodeNote
         public static int[] FindRedundantConnection(int[][] edges) {
             int length = edges.Length + 1;
             int[] parent = new int[length];
-            bool[] visited = new bool[length];
 
             for(int i = 1; i < length; i++){
                 parent[i] = i;
@@ -27,26 +26,14 @@ namespace LeetCodeNote
             }
 
             foreach(var edge in edges){
-                int u = edge[0];
-                int v = edge[1];
-
-                int rootU = Find(u);
-                int rootV = Find(v);
+                int rootU = Find(edge[0]);
+                int rootV = Find(edge[1]);
                     
-                if(rootU == rootV){
-                    if(visited[u] && visited[v])
-                        return new int[]{u, v};
-                    else
-                        continue;
-                }
+                if(rootU == rootV)
+                    return edge;
+                
 
                 parent[rootV] = rootU;
-
-                if(!visited[u])
-                    visited[u] = true;
-
-                if(!visited[v])
-                    visited[v] = true;
             }
 
             return new int[]{};
