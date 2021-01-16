@@ -24,8 +24,17 @@ namespace LeetCodeNote
                 new int[]{2,1},
                 new int[]{2,2},
             };
+
+            int[][] grid = new int[][]{
+                new int[]{1,0,0,0},
+                new int[]{1,1,0,0}
+            };
+            int[][] hits = new int[][]{
+                new int[]{1,1},
+                new int[]{1,0}
+            };
           
-            var result = Solution947.RemoveStones_1(stones);
+            var result = Solution803.HitBricks(grid, hits);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
