@@ -29,12 +29,13 @@ namespace LeetCodeNote
                 new int[]{1,0,0,0},
                 new int[]{1,1,0,0}
             };
-            int[][] hits = new int[][]{
-                new int[]{1,1},
-                new int[]{1,0}
+            int[][] coordinates = new int[][]{
+                new int[]{0,0},
+                new int[]{0,1},
+                new int[]{0,-1}
             };
           
-            var result = Solution803.HitBricks(grid, hits);
+            var result = Solution1232.CheckStraightLine_1(coordinates);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
