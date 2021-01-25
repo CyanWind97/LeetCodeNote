@@ -24,18 +24,17 @@ namespace LeetCodeNote
                 new int[]{2,1},
                 new int[]{2,2},
             };
-
-            int[][] grid = new int[][]{
-                new int[]{1,0,0,0},
-                new int[]{1,1,0,0}
-            };
             int[][] coordinates = new int[][]{
                 new int[]{0,0},
                 new int[]{0,1},
                 new int[]{0,-1}
             };
+
+            string[] grid = {
+                "\\/","/\\"
+            };
           
-            var result = Solution1232.CheckStraightLine_1(coordinates);
+            var result = Solution959.RegionsBySlashes(grid);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
