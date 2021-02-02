@@ -19,7 +19,7 @@ namespace LeetCodeNote
             int[][] edges = new int[][]{};
             string[] strs = {"tars","tars","rats","arts","star","aba"};
 
-            var result = Solution839.NumSimilarGroups(strs);
+            var result = Solution424.CharacterReplacement("AABABBA", 1);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
