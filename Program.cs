@@ -11,15 +11,15 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            int[] nums = {3,2,6,5,0,3};
-            int k = 4;
+            int[] nums = {5,2,2,7,3,7,9,0,2,3};
+            int k = 9;
             int n = 13;
             int m = 2;
             int[] group = {-1,-1,1,0,0,1,0,-1};
             int[][] edges = new int[][]{};
             string[] strs = {"tars","tars","rats","arts","star","aba"};
 
-            var result = Solution424.CharacterReplacement("AABABBA", 1);
+            var result = Solution480.MedianSlidingWindow_1(nums, k);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
