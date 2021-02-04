@@ -18,8 +18,9 @@ namespace LeetCodeNote
             int[] group = {-1,-1,1,0,0,1,0,-1};
             int[][] edges = new int[][]{};
             string[] strs = {"tars","tars","rats","arts","star","aba"};
+            char[] chars = {'a','a','b','b','c','c','c'};
 
-            var result = Solution480.MedianSlidingWindow_1(nums, k);
+            var result = Solution443.Compress(chars);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
