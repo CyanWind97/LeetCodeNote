@@ -20,7 +20,7 @@ namespace LeetCodeNote
             string[] strs = {"tars","tars","rats","arts","star","aba"};
             char[] chars = {'a','a','b','b','c','c','c'};
 
-            var result = Solution443.Compress(chars);
+            var result = Solution1208.EqualSubstring("krrgw","zjxss", 19);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
