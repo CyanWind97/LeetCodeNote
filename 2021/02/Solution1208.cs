@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 namespace LeetCodeNote
 {
+    /// <summary>
+    /// no: 1208
+    /// title: 尽可能使字符串相等
+    /// problems: https://leetcode-cn.com/problems/get-equal-substrings-within-budget/
+    /// date: 20210205
+    /// </summary>
     public static class Solution1208
     {
-        /// <summary>
-        /// no: 1208
-        /// title: 尽可能使字符串相等
-        /// problems: https://leetcode-cn.com/problems/get-equal-substrings-within-budget/
-        /// date: 20210205
-        /// </summary>
         public static int EqualSubstring(string s, string t, int maxCost) {
             char[] charsS = s.ToCharArray();
             char[] charsT = t.ToCharArray();
