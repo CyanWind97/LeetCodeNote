@@ -19,8 +19,9 @@ namespace LeetCodeNote
             int[][] edges = new int[][]{};
             string[] strs = {"tars","tars","rats","arts","star","aba"};
             char[] chars = {'a','a','b','b','c','c','c'};
+            int[] arr = {2,3,2,3,2,3};
 
-            var result = Solution1208.EqualSubstring("krrgw","zjxss", 19);
+            var result = Solution978.MaxTurbulenceSize(arr);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
