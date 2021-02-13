@@ -21,8 +21,9 @@ namespace LeetCodeNote
             int[] arr = {2,3,2,3,2,3};
             int[] A = {1,2,1,2,1};
             int k = 2;
+            int[] row = {5,4,2,6,3,1,0,7};
 
-            var result = Solution992.SubarraysWithKDistinct(A, k);
+            var result = Solution765.MinSwapsCouples(row);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
