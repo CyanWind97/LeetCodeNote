@@ -11,7 +11,7 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            int[] nums = {5,2,2,7,3,7,9,0,2,3};
+            int[] nums = {1,1,0,1,1,1};
             int n = 13;
             int m = 2;
             int[] group = {-1,-1,1,0,0,1,0,-1};
@@ -23,7 +23,7 @@ namespace LeetCodeNote
             int k = 2;
             int[] row = {5,4,2,6,3,1,0,7};
 
-            var result = Solution765.MinSwapsCouples(row);
+            var result = Solution485.FindMaxConsecutiveOnes(nums);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
