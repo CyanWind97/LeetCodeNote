@@ -19,11 +19,11 @@ namespace LeetCodeNote
             string[] strs = {"tars","tars","rats","arts","star","aba"};
             char[] chars = {'a','a','b','b','c','c','c'};
             int[] arr = {2,3,2,3,2,3};
-            int[] A = {1,2,1,2,1};
-            int k = 2;
+            int[] A = {0,1,0};
+            int k = 1;
             int[] row = {5,4,2,6,3,1,0,7};
 
-            var result = Solution485.FindMaxConsecutiveOnes(nums);
+            var result = Solution995.MinKBitFlips(A,k);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
