@@ -22,8 +22,11 @@ namespace LeetCodeNote
             int[] A = {0,1,0};
             int k = 1;
             int[] row = {5,4,2,6,3,1,0,7};
+            int[] customers = {1,0,1,2,1,1,7,5};
+            int[] grumpy = {0,1,0,1,0,1,0,1};
+            int X = 3;
 
-            var result = Solution995.MinKBitFlips(A,k);
+            var result = Solution1052.MaxSatisfied(customers, grumpy, X);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
