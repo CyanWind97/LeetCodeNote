@@ -20,13 +20,15 @@ namespace LeetCodeNote
             char[] chars = {'a','a','b','b','c','c','c'};
             int[] arr = {2,3,2,3,2,3};
             int[] A = {0,1,0};
-            int k = 1;
             int[] row = {5,4,2,6,3,1,0,7};
             int[] customers = {1,0,1,2,1,1,7,5};
             int[] grumpy = {0,1,0,1,0,1,0,1};
             int X = 3;
+            string s = "ababbc";
+            int k = 2;
 
-            var result = Solution1052.MaxSatisfied(customers, grumpy, X);
+
+            var result = Solution395.LongestSubstring(s,k);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
