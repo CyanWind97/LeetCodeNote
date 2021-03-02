@@ -12,7 +12,6 @@ namespace LeetCodeNote
             int[] result = new int[num + 1];
 
             result[0] = 0;
-            int max = 1;
             int cur = 0;
             int index = 1;
             while(index <= num){
@@ -23,6 +22,17 @@ namespace LeetCodeNote
             }
 
             return result;
+        }
+
+        // 参考解答
+        public static int[] CountBits_1(int num) {
+            int[] bits = new int[num + 1];
+
+            for(int i = 1; i <= num; i++){
+                bits[i] = bits[i & (i - 1)] + 1;
+            }
+
+            return bits;
         }
     }
 }
