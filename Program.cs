@@ -26,17 +26,14 @@ namespace LeetCodeNote
             int X = 3;
             string s = "ababbc";
             int k = 2;
-            int[][] matrix ={
-                new int[]{3, 0, 1, 4, 2},
-                new int[]{5, 6, 3, 2, 1},
-                new int[]{1, 2, 0, 1, 5},
-                new int[]{4, 1, 0, 1, 7},
-                new int[]{1, 0, 3, 0, 5}
+            int[][] envelopes ={
+                new int[]{10,8},
+                new int[]{1,12},
+                new int[]{6,15},
+                new int[]{2,18}
             };
 
-            var test = new Solution304.NumMatrix(matrix);
-
-            var result = test.SumRegion(1, 1, 2, 2 );
+            var result = Solution354.MaxEnvelopes(envelopes);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
