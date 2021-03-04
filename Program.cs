@@ -33,7 +33,14 @@ namespace LeetCodeNote
                 new int[]{2,18}
             };
 
-            var result = Solution354.MaxEnvelopes(envelopes);
+            var result = 0;
+
+            var obj = new Solution232.MyQueue();
+            obj.Push(1);
+            obj.Push(2);
+            obj.Peek();
+            obj.Pop();
+            obj.Empty();
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
