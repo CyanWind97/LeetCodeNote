@@ -33,14 +33,7 @@ namespace LeetCodeNote
                 new int[]{2,18}
             };
 
-            var result = 0;
-
-            var obj = new Solution232.MyQueue();
-            obj.Push(1);
-            obj.Push(2);
-            obj.Peek();
-            obj.Pop();
-            obj.Empty();
+            var result = Solution224.Calculate("1-(2+3-(4+(5-(1-(2+4-(5+6))))))");
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
