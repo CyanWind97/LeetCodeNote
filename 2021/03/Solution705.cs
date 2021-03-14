@@ -3,7 +3,7 @@ using System.Collections.Generic;
 namespace LeetCodeNote
 {
     /// <summary>
-    /// no: 5705
+    /// no: 705
     /// title: 设计哈希集合
     /// problems: https://leetcode-cn.com/problems/design-hashset/
     /// date: 20210313
