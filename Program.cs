@@ -33,7 +33,16 @@ namespace LeetCodeNote
                 new int[]{2,18}
             };
 
-            var result = Solution224.Calculate("1-(2+3-(4+(5-(1-(2+4-(5+6))))))");
+            var head = new Solution92.ListNode(1, null);
+            var cur = head;
+            for(int i = 2; i <= 5; i++){
+                var node = new Solution92.ListNode(i);
+                cur.next = node;
+                cur = node;
+            }
+
+
+            var result = Solution92.ReverseBetween(head, 3, 4);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
