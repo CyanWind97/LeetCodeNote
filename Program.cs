@@ -33,16 +33,7 @@ namespace LeetCodeNote
                 new int[]{2,18}
             };
 
-            var head = new Solution92.ListNode(1, null);
-            var cur = head;
-            for(int i = 2; i <= 5; i++){
-                var node = new Solution92.ListNode(i);
-                cur.next = node;
-                cur = node;
-            }
-
-
-            var result = Solution92.ReverseBetween(head, 3, 4);
+            var result = Solution190.reverseBits_2(43261596);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
