@@ -31,9 +31,18 @@ namespace LeetCodeNote
             int m = matrix.Length;
             int n = matrix[0].Length;
 
-            int i1 = 0, j1 = 0; 
-            int i2 = m - 1, j2 = n - 1;
-            
+            int left = 0;
+            int right = m * n - 1;
+            while(left <= right){
+                int mid = left + (right - left) >> 1;
+                if(target == matrix[mid / n][mid % n]){
+                    return true;
+                }else if(target < matrix[mid / n][mid % n]){
+                    right = mid - 1;
+                }else{
+                    left = mid + 1;
+                }
+            }
 
             
             return false;
