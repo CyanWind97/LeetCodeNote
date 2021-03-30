@@ -26,14 +26,13 @@ namespace LeetCodeNote
             int X = 3;
             string s = "ababbc";
             int k = 2;
-            int[][] envelopes ={
-                new int[]{10,8},
-                new int[]{1,12},
-                new int[]{6,15},
-                new int[]{2,18}
+            int[][] matrix ={
+                new int[]{1,3,5,7},
+                new int[]{10,11,16,20},
+                new int[]{23,30,34,60},
             };
 
-            var result = Solution190.reverseBits_2(43261596);
+            var result = Solution74.SearchMatrix(matrix, 3);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
