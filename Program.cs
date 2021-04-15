@@ -11,7 +11,7 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            int[] nums = {3,2,3,2,3,4};
+            int[] nums = {1,3,5};
             int n = 13;
             int m = 2;
             int[] group = {-1,-1,1,0,0,1,0,-1};
@@ -32,7 +32,7 @@ namespace LeetCodeNote
                 new int[]{23,30,34,60},
             };
 
-            var result = Solution213.Rob(nums);
+            var result = Solution154.FindMin(nums);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
