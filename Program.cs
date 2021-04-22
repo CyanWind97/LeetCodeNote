@@ -27,12 +27,10 @@ namespace LeetCodeNote
             string s = "ababbc";
             int k = 2;
             int[][] matrix ={
-                new int[]{1,3,5,7},
-                new int[]{10,11,16,20},
-                new int[]{23,30,34,60},
+                new int[]{2,2,-1},
             };
 
-            var result = Solution154.FindMin(nums);
+            var result = Solution363.MaxSumSubmatrix_1(matrix, 0);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
