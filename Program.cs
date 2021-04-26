@@ -30,7 +30,10 @@ namespace LeetCodeNote
                 new int[]{2,2,-1},
             };
 
-            var result = Solution363.MaxSumSubmatrix_1(matrix, 0);
+            int[] weights = new int[] {3,2,2,4,1,4};
+            int D = 3;
+
+            var result = Solution1011.ShipWithinDays(weights, 3);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
