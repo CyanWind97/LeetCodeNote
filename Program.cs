@@ -30,10 +30,9 @@ namespace LeetCodeNote
                 new int[]{2,2,-1},
             };
 
-            int[] weights = new int[] {3,2,2,4,1,4};
-            int D = 3;
+            int[] stones = new int[] {0,1,3,5,6,8,12,17};
 
-            var result = Solution1011.ShipWithinDays(weights, 3);
+            var result = Solution403.CanCross(stones);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
