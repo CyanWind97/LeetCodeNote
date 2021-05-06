@@ -2,6 +2,12 @@ using System;
 
 namespace LeetCodeNote
 {
+    /// <summary>
+    /// no: 1473
+    /// title:  粉刷房子 III
+    /// problems: https://leetcode-cn.com/problems/paint-house-iii/
+    /// date: 20210504
+    /// </summary>
     public static class Solution1473
     {
         // 参考解答
