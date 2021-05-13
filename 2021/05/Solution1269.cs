@@ -1,3 +1,5 @@
+using System;
+
 namespace LeetCodeNote
 {
     /// <summary>
@@ -9,21 +11,24 @@ namespace LeetCodeNote
     public static class Solution1269
     {
         public static int NumWays(int steps, int arrLen) {
-            long[,] dp = new long[arrLen, steps];
-            dp[0, 1] = 1;
-            dp[1, 1] = 1;
+            const int mod = 1000000007;
+            int maxColumn = Math.Min(arrLen - 1, steps);
+            int[,] dp = new int[maxColumn + 1, steps + 1];
+            dp[0, 0] = 1;
 
-            int mod = 1000000007;
 
-            for(int i = 2; i < steps; i++){
-                dp[0, i] = (dp[0, i - 1] + dp[1, i - 1]) % mod;
-                for(int j = 1; j < arrLen - 1; j++){
-                    dp[j, i] = (dp[j - 1, i - 1] + dp[j, i - 1] + dp[j + 1, i - 1]) % mod;
+            for(int i = 1; i <= steps; i++){
+                for(int j = 0; j <= maxColumn; j++){
+                    dp[j, i] = dp[j, i - 1];
+                    if(j - 1 >= 0)
+                        dp[j, i] = (dp[j - 1, i - 1] + dp[j, i]) % mod;
+                    
+                    if(j + 1 <= maxColumn)
+                        dp[j, i] = (dp[j + 1, i - 1] + dp[j, i]) % mod;
                 }
-                dp[arrLen - 1, i] = (dp[arrLen - 2, i] + dp[arrLen - 1, i]) % mod;
             }
 
-            return (int)((dp[0, steps - 1] + dp[1, steps - 1]) % mod);
+            return dp[0, steps];
         }
     }
 }
