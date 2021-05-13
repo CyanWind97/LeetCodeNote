@@ -32,7 +32,7 @@ namespace LeetCodeNote
 
             int[] stones = new int[] {0,1,3,5,6,8,12,17};
 
-            var result = Solution403.CanCross(stones);
+            var result = Solution1269.NumWays(3, 3);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
