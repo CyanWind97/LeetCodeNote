@@ -29,10 +29,10 @@ namespace LeetCodeNote
             int[][] matrix ={
                 new int[]{2,2,-1},
             };
-
+            string[] words = {"i", "love", "leetcode", "i", "love", "coding"};
             int[] stones = new int[] {0,1,3,5,6,8,12,17};
 
-            var result = Solution1269.NumWays(3, 3);
+            var result = Solution692.TopKFrequent(words, 2);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
