@@ -11,7 +11,7 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            int[] nums = {1,3,5};
+            int[] nums = {5,0,0,0};
             int n = 13;
             int m = 2;
             int[] group = {-1,-1,1,0,0,1,0,-1};
@@ -37,7 +37,7 @@ namespace LeetCodeNote
                 new int[]{91,244597,840227137}
             };
 
-            var result = Solution1744.CanEat(candies, queries);
+            var result = Solution523.CheckSubarraySum(nums, 3);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
