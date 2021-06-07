@@ -37,7 +37,7 @@ namespace LeetCodeNote
                 new int[]{91,244597,840227137}
             };
 
-            var result = Solution525.FindMaxLength(new int[]{0,0,1,0,0,0,1,1});
+            var result = Solution494.FindTargetSumWays(new int[]{1,3, 0, 12, 3124}, -5);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
