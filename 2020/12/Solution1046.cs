@@ -3,6 +3,12 @@ using System.Collections.Generic;
 
 namespace LeetCodeNote
 {
+    /// <summary>
+    /// no: 1046
+    /// title: 最后一块石头的重量
+    /// problems: https://leetcode-cn.com/problems/last-stone-weight/
+    /// date: 20201230
+    /// </summary>
     public static class Solution1046
     {
         public static int LastStoneWeight(int[] stones) {
