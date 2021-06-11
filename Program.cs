@@ -37,7 +37,7 @@ namespace LeetCodeNote
                 new int[]{91,244597,840227137}
             };
 
-            var result = Solution1049.LastStoneWeightII(new int[]{1, 1, 2, 4, 7, 8});
+            var result = Solution279.NumSquares(5);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
