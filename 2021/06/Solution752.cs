@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/open-the-lock/
     /// date: 20210625
     /// </summary>
-    public static class Solution745
+    public static class Solution752
     {
         // 参考 启发性搜索 A*算法
         // f(n) = g(n) + h(n)
@@ -26,15 +26,41 @@ namespace LeetCodeNote
                 return -1;
             
             Heap<AStart> heap = new Heap<AStart>(false);
-            
+            heap.Insert(new AStart("0000", target, 0));
+            HashSet<string> seen = new HashSet<string>();
+            seen.Add("0000");
+            while(!heap.Empty){
+                AStart node = heap.Pop();
+                foreach(var nextStatus in Get(node.Status)){
+                    if(!seen.Contains(nextStatus) && !dead.Contains(nextStatus)){
+                        if(nextStatus == target)
+                            return node.G + 1;
+                        
+                        heap.Insert(new AStart(nextStatus, target, node.G + 1));
+                        seen.Add(nextStatus);
+                    }
+                }
+            }
 
-
-            return 0;
+            return -1;
         }
 
         public static char PrevNum(char x) => x == '0' ? '9' : (char)(x -1);
 
-        public static char SuccNum(char x) => x == '9' ? '0' : (char)(x - 1);
+        public static char SuccNum(char x) => x == '9' ? '0' : (char)(x + 1);
+
+        // 枚举 status 通过一次旋转得到的数字
+        public static IEnumerable<string> Get(string status) {
+            char[] array = status.ToCharArray();
+            for (int i = 0; i < 4; ++i) {
+                char num = array[i];
+                array[i] = PrevNum(num);
+                yield return new string(array);
+                array[i] = SuccNum(num);
+                yield return new string(array);
+                array[i] = num;
+            }
+        }
 
         public class AStart : IComparable<AStart>
         {
@@ -47,7 +73,7 @@ namespace LeetCodeNote
                 this.Status = status;
                 this.G = g;
                 this.H = GetH(status, target);
-                this.F = this.G + this.F;
+                this.F = this.G + this.H;
             }
 
             public static int GetH(string status, string target){
@@ -59,7 +85,7 @@ namespace LeetCodeNote
                 return result;
             }
 
-            public int CompareTo(AStart other) => this.F.CompareTo(other.F);
+            public int CompareTo(AStart other) => this.F - other.F;
         }
     
         // 大顶堆

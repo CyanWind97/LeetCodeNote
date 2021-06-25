@@ -37,7 +37,8 @@ namespace LeetCodeNote
                 new int[]{91,244597,840227137}
             };
 
-            var result = Solution1449.LargestNumber(new int[]{21,25,18,23,25,23,20,18,38}, 84);
+            var result = Solution752.OpenLock(
+                new string[]{"0201","0101","0102","1212","2002"},"0202");
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
