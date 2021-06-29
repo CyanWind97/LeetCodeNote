@@ -37,8 +37,7 @@ namespace LeetCodeNote
                 new int[]{91,244597,840227137}
             };
 
-            var result = Solution752.OpenLock(
-                new string[]{"0201","0101","0102","1212","2002"},"0202");
+            var result = Solution168.ConvertToTitle(701);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
