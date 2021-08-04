@@ -38,7 +38,7 @@ namespace LeetCodeNote
                 new int[]{3,4,1}
             };
 
-            var result = Solution743.NetworkDelayTime(times, 4, 2);
+            var result = Solution611.TriangleNumber(new int[]{2, 2, 3, 4});
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
