@@ -32,13 +32,17 @@ namespace LeetCodeNote
             string[] words = {"i", "love", "leetcode", "i", "love", "coding"};
             int[] stones = new int[] {0,1,3,5,6,8,12,17};
 
-            int[][] times = new int[][]{
-                new int[]{2,1,1},
-                new int[]{2,3,1},
-                new int[]{3,4,1}
+            int[][] graph = new int[][]{
+                new int[]{1,2},
+                new int[]{2,3},
+                new int[]{5},
+                new int[]{0},
+                new int[]{5},
+                new int[]{},
+                new int[]{}
             };
 
-            var result = Solution611.TriangleNumber(new int[]{2, 2, 3, 4});
+            var result = Solution802.EventualSafeNodes(graph);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
