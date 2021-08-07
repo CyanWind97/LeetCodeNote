@@ -20,13 +20,11 @@ namespace LeetCodeNote
                 seen[i, 1 << i] = true;
             }
 
-            int ans = 0;
             while (queue.Count > 0) {
                 var cur = queue.Dequeue();
-                if (cur.Mask == (1 << n) - 1) {
-                    ans = cur.Dist;
-                    break;
-                }
+                if (cur.Mask == (1 << n) - 1)
+                    return cur.Dist;
+                
                 // 搜索相邻的节点
                 foreach (int v in graph[cur.U]) {
                     // 将 mask 的第 v 位置为 1
@@ -37,7 +35,8 @@ namespace LeetCodeNote
                     }
                 }
             }
-            return ans;
+            
+            return 0;
         }
     }
 }
