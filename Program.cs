@@ -42,7 +42,7 @@ namespace LeetCodeNote
                 new int[]{}
             };
 
-            var result = Solution313.NthSuperUglyNumber(12, new int[]{2,7,13,19});
+            var result = Solution516.LongestPalindromeSubseq("bbbab");
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
