@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/string-compression/
     /// date: 20210204
     /// </summary>
-    public static class Solution443
+    public static partial class Solution443
     {
         public static int Compress(char[] chars) {
             int length = chars.Length;
