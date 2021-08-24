@@ -11,38 +11,34 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            int[] nums = {5,0,0,0};
+            int[] nums = { 5, 0, 0, 0 };
             int n = 13;
             int m = 2;
-            int[] group = {-1,-1,1,0,0,1,0,-1};
-            int[][] edges = new int[][]{};
-            string[] strs = {"tars","tars","rats","arts","star","aba"};
-            char[] chars = {'a','a','b','b','c','c','c'};
-            int[] arr = {2,3,2,3,2,3};
-            int[] A = {0,1,0};
-            int[] row = {5,4,2,6,3,1,0,7};
-            int[] customers = {1,0,1,2,1,1,7,5};
-            int[] grumpy = {0,1,0,1,0,1,0,1};
+            int[] group = { -1, -1, 1, 0, 0, 1, 0, -1 };
+            int[][] edges = new int[][] { };
+            string[] strs = { "tars", "tars", "rats", "arts", "star", "aba" };
+            char[] chars = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
+            int[] arr = { 2, 3, 2, 3, 2, 3 };
+            int[] A = { 0, 1, 0 };
+            int[] row = { 5, 4, 2, 6, 3, 1, 0, 7 };
+            int[] customers = { 1, 0, 1, 2, 1, 1, 7, 5 };
+            int[] grumpy = { 0, 1, 0, 1, 0, 1, 0, 1 };
             int X = 3;
             string s = "ababbc";
             int k = 2;
             int[][] matrix ={
                 new int[]{2,2,-1},
             };
-            string[] words = {"i", "love", "leetcode", "i", "love", "coding"};
-            int[] stones = new int[] {0,1,3,5,6,8,12,17};
+            string[] words = { "i", "love", "leetcode", "i", "love", "coding" };
+            int[] stones = new int[] { 0, 1, 3, 5, 6, 8, 12, 17 };
 
-            int[][] graph = new int[][]{
-                new int[]{1,2},
-                new int[]{2,3},
-                new int[]{5},
-                new int[]{0},
-                new int[]{5},
-                new int[]{},
-                new int[]{}
+            int[][] flights = new int[][]{
+                new int[]{0,1,100},
+                new int[]{1,2,100},
+                new int[]{0,2,500},
             };
 
-            var result = Solution516.LongestPalindromeSubseq("bbbab");
+            var result = Solution787.FindCheapestPrice(3, flights, 0, 2, 1);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
