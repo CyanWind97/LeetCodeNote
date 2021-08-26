@@ -12,25 +12,23 @@ namespace LeetCodeNote
     {
         public static IList<IList<int>> AllPathsSourceTarget(int[][] graph) {
             var result = new List<IList<int>>();
-            var stack = new Stack<int>();
+            var stack = new LinkedList<int>();
             var length = graph.Length - 1;
 
             void dfs(int x){
                 if(x == length){
-                    var list = new List<int>(stack);
-                    list.Reverse();
-                    result.Add(list);
+                    result.Add(new List<int>(stack));
                     return;
                 }
 
                 foreach(var y in graph[x]){
-                    stack.Push(y);
+                    stack.AddLast(y);
                     dfs(y);
-                    stack.Pop();
+                    stack.RemoveLast();
                 }
             }
 
-            stack.Push(0);
+            stack.AddLast(0);
             dfs(0);
 
             return result;
