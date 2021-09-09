@@ -29,7 +29,7 @@ namespace LeetCodeNote
             int[][] matrix ={
                 new int[]{2,2,-1},
             };
-            string[] words = { "i", "love", "leetcode", "i", "love", "coding" };
+            string[] words = {"ask","not","what","your","country","can","do","for","you","ask","what","you","can","do","for","your","country"};
             int[] stones = new int[] { 0, 1, 3, 5, 6, 8, 12, 17 };
 
             int[][] flights = new int[][]{
@@ -38,7 +38,8 @@ namespace LeetCodeNote
                 new int[]{0,2,500},
             };
 
-            var result = Solution787.FindCheapestPrice(3, flights, 0, 2, 1);
+            
+            var result = Solution68.FullJustify(words, 16);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
