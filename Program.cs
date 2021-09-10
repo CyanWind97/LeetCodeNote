@@ -39,7 +39,7 @@ namespace LeetCodeNote
             };
 
             
-            var result = Solution68.FullJustify(words, 16);
+            var result = Solution1894.ChalkReplacer(new int[]{5,1,5}, 22);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
