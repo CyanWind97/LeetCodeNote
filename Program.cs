@@ -39,7 +39,7 @@ namespace LeetCodeNote
             };
 
             
-            var result = Solution1894.ChalkReplacer(new int[]{5,1,5}, 22);
+            var result = Solution524.FindLongestWord_1("abpcplea", new string[]{"ale","apple","monkey","plea"});
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
