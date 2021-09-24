@@ -39,7 +39,11 @@ namespace LeetCodeNote
             };
 
             
-            var result = Solution524.FindLongestWord_1("abpcplea", new string[]{"ale","apple","monkey","plea"});
+            var node = new Solution725.ListNode(1);
+            var top = node;
+            node = (node.next = new Solution725.ListNode(2));
+            node = (node.next = new Solution725.ListNode(3));
+            var result = Solution725.SplitListToParts(top, 5);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
