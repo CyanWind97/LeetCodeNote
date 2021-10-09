@@ -39,11 +39,13 @@ namespace LeetCodeNote
             };
 
             
-            var node = new Solution725.ListNode(1);
-            var top = node;
-            node = (node.next = new Solution725.ListNode(2));
-            node = (node.next = new Solution725.ListNode(3));
-            var result = Solution725.SplitListToParts(top, 5);
+            var vals = new int[]{ 6, 6, 0, 4, 8, 7, 6, 4, 7, 5};
+            var tmp = new Solution352.SummaryRanges();
+            foreach(var val in vals){
+                tmp.AddNum(val);
+            }
+            
+            var result = 0;
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
