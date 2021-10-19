@@ -39,12 +39,17 @@ namespace LeetCodeNote
             };
 
             
-            var vals = new int[]{ 6, 6, 0, 4, 8, 7, 6, 4, 7, 5};
-            var tmp = new Solution352.SummaryRanges();
-            foreach(var val in vals){
-                tmp.AddNum(val);
-            }
-            
+            var dic = new Solution211.WordDictionary();
+            dic.AddWord("bad");
+            dic.AddWord("dad");
+            dic.AddWord("mad");
+
+            bool flag = false;
+            flag = dic.Search("pad");
+            flag = dic.Search("bad");
+            flag = dic.Search(".ad");
+            flag = dic.Search("b..");
+
             var result = 0;
 
             Console.WriteLine(result);
