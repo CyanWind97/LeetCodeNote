@@ -38,7 +38,7 @@ namespace LeetCodeNote
                 new int[]{0,2,500},
             };
 
-            var result = Solution496.NextGreaterElement(new int[]{4, 1, 2}, new int[]{1, 3, 4, 2});
+            var result = Solution335.IsSelfCrossing(new int[]{1,1,2,1,1});
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
