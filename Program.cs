@@ -38,19 +38,7 @@ namespace LeetCodeNote
                 new int[]{0,2,500},
             };
 
-            
-            var dic = new Solution211.WordDictionary();
-            dic.AddWord("bad");
-            dic.AddWord("dad");
-            dic.AddWord("mad");
-
-            bool flag = false;
-            flag = dic.Search("pad");
-            flag = dic.Search("bad");
-            flag = dic.Search(".ad");
-            flag = dic.Search("b..");
-
-            var result = 0;
+            var result = Solution335.IsSelfCrossing(new int[]{1,1,2,1,1});
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
