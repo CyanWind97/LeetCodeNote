@@ -38,7 +38,16 @@ namespace LeetCodeNote
                 new int[]{0,2,500},
             };
 
-            var result = Solution335.IsSelfCrossing(new int[]{1,1,2,1,1});
+            var points = new int[][]{
+                new int[]{1,1},
+                new int[]{2,2},
+                new int[]{3,3},
+                new int[]{4,4},
+                new int[]{1,2},
+                new int[]{2,1},
+            };
+
+            var result = Solution1610.VisiblePoints(points, 0, new int[]{1, 1});
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
