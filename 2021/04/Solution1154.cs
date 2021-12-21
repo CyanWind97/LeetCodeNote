@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/day-of-the-year/
     /// date: 20210420
     /// </summary>
-    public static class Solution1154
+    public static partial class Solution1154
     {
         public static int DayOfYear(string date) {
             int[] days = {0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334};
