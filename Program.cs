@@ -47,7 +47,7 @@ namespace LeetCodeNote
                 new int[]{2,1},
             };
 
-            var result = Solution1610.VisiblePoints(points, 0, new int[]{1, 1});
+            var result = Solution1705.EatenApples(new int[]{2, 1, 10}, new int[]{2, 10, 1});
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
