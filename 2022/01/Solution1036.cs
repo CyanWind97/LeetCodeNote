@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// </summary>
     public static class Solution1036
     {
-        // 参考解答 离散化
+        // 参考解答 离散化 压缩范围
         public static bool IsEscapePossible(int[][] blocked, int[] source, int[] target) {
             if (blocked.Length < 2)
                 return true;
