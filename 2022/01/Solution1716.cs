@@ -4,7 +4,7 @@ namespace LeetCodeNote
     /// no: 1716
     /// title: 计算力扣银行的钱
     /// problems: https://leetcode-cn.com/problems/calculate-money-in-leetcode-bank/
-    /// date: 20220109
+    /// date: 20220115
     /// </summary>
     public static class Solution1716
     {
