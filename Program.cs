@@ -29,7 +29,7 @@ namespace LeetCodeNote
             int[][] matrix ={
                 new int[]{2,2,-1},
             };
-            string[] words = {"ask","not","what","your","country","can","do","for","you","ask","what","you","can","do","for","your","country"};
+            
             int[] stones = new int[] { 0, 1, 3, 5, 6, 8, 12, 17 };
 
             int[][] flights = new int[][]{
@@ -47,7 +47,8 @@ namespace LeetCodeNote
                 new int[]{2,1},
             };
 
-            var result = Solution1705.EatenApples(new int[]{2, 1, 10}, new int[]{2, 10, 1});
+            var words = "!g 3 !sy ";
+            var result = Solution2047.CountValidWords(words);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
