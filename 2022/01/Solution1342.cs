@@ -2,7 +2,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 1342
-    /// title: ½«Êı×Ö±ä³É 0 µÄ²Ù×÷´ÎÊı
+    /// title: å°†æ•°å­—å˜æˆ 0 çš„æ“ä½œæ¬¡æ•°
     /// problems: https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-to-zero/
     /// date: 20220131
     /// </summary>

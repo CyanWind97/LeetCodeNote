@@ -5,7 +5,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 2047
-    /// title: ¾ä×ÓÖĞµÄÓĞĞ§µ¥´ÊÊı
+    /// title: å¥å­ä¸­çš„æœ‰æ•ˆå•è¯æ•°
     /// problems: https://leetcode-cn.com/problems/number-of-valid-words-in-a-sentence/
     /// date: 20220127
     /// </summary>

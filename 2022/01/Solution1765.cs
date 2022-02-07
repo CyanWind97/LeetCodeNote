@@ -5,7 +5,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 1765
-    /// title: Í¼ÖÐµÄ×î¸ßµã
+    /// title: å›¾ä¸­çš„æœ€é«˜ç‚¹
     /// problems: hhttps://leetcode-cn.com/problems/map-of-highest-peak/
     /// date: 20220129
     /// </summary>
@@ -17,14 +17,14 @@ namespace LeetCodeNote
             var result = new int[m][];
             for (int i = 0; i < m; ++i) {
                 result[i] = new int[n];
-                Array.Fill(result[i], -1); // -1 ±íÊ¾¸Ã¸ñ×ÓÉÐÎ´±»·ÃÎÊ¹ý
+                Array.Fill(result[i], -1); // -1 è¡¨ç¤ºè¯¥æ ¼å­å°šæœªè¢«è®¿é—®è¿‡
             }
             var queue = new Queue<(int X, int Y)>();
             for (int i = 0; i < m; ++i) {
                 for (int j = 0; j < n; ++j) {
                     if (isWater[i][j] == 1) {
                         result[i][j] = 0;
-                        queue.Enqueue((i, j)); // ½«ËùÓÐË®ÓòÈë¶Ó
+                        queue.Enqueue((i, j)); // å°†æ‰€æœ‰æ°´åŸŸå…¥é˜Ÿ
                     }
                 }
             }

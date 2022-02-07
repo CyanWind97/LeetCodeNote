@@ -4,7 +4,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 2054
-    /// title: µ½´ïÄ¿µÄµØµÄµÚ¶þ¶ÌÊ±¼ä
+    /// title: åˆ°è¾¾ç›®çš„åœ°çš„ç¬¬äºŒçŸ­æ—¶é—´
     /// problems: https://leetcode-cn.com/problems/second-minimum-time-to-reach-destination/
     /// date: 20220124
     /// </summary>
@@ -20,7 +20,7 @@ namespace LeetCodeNote
                 graph[edge[1]].Add(edge[0]);
             }
 
-            // path[i][0] ±íÊ¾´Ó 1 µ½ i µÄ×î¶ÌÂ·³¤¶È£¬path[i][1] ±íÊ¾´Ó 1 µ½ i µÄÑÏ¸ñ´Î¶ÌÂ·³¤¶È
+            // path[i][0] è¡¨ç¤ºä»Ž 1 åˆ° i çš„æœ€çŸ­è·¯é•¿åº¦ï¼Œpath[i][1] è¡¨ç¤ºä»Ž 1 åˆ° i çš„ä¸¥æ ¼æ¬¡çŸ­è·¯é•¿åº¦
             int[,] path = new int[n + 1, 2];
             for (int i = 0; i <= n; i++) {
                 for (int j = 0; j < 2; j++) {

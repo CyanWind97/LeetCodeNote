@@ -4,7 +4,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 2000
-    /// title:  反转单词前缀
+    /// title:  鍙嶈浆鍗曡瘝鍓嶇紑
     /// problems: https://leetcode-cn.com/problems/reverse-prefix-of-word/
     /// date: 20220202
     /// </summary>

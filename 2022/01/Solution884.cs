@@ -4,7 +4,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 884
-    /// title: 两句话中的不常见单词
+    /// title: 涓ゅ彞璇濅腑鐨勪笉甯歌鍗曡瘝
     /// problems: https://leetcode-cn.com/problems/uncommon-words-from-two-sentences/
     /// date: 20220130
     /// </summary>
