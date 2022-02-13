@@ -2,7 +2,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 1763
-    /// title: 最长的美好子字符串
+    /// title: 鏈�闀跨殑缇庡ソ瀛愬瓧绗︿覆
     /// problems: https://leetcode-cn.com/problems/longest-nice-substring/
     /// date: 20220201
     /// </summary>

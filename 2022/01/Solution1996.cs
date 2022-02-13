@@ -5,7 +5,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 1996
-    /// title: ÓÎÏ·ÖĞÈõ½ÇÉ«µÄÊıÁ¿
+    /// title: æ¸¸æˆä¸­å¼±è§’è‰²çš„æ•°é‡
     /// problems: https://leetcode-cn.com/problems/the-number-of-weak-characters-in-the-game/
     /// date: 20220128
     /// </summary>

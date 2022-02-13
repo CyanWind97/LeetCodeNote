@@ -4,7 +4,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 2013
-    /// title: ¼ì²âÕı·½ĞÎ
+    /// title: æ£€æµ‹æ­£æ–¹å½¢
     /// problems: https://leetcode-cn.com/problems/detect-squares/
     /// date: 20220126
     /// </summary>
@@ -40,7 +40,7 @@ namespace LeetCodeNote
                     int col = pair.Key;
                     Dictionary<int, int> colCnt = pair.Value;
                     if (col != y) {
-                        // ¸ù¾İ¶Ô³ÆĞÔ£¬ÕâÀï¿ÉÒÔ²»ÓÃÈ¡¾ø¶ÔÖµ
+                        // æ ¹æ®å¯¹ç§°æ€§ï¼Œè¿™é‡Œå¯ä»¥ä¸ç”¨å–ç»å¯¹å€¼
                         int d = col - y;
                         int cnt1 = colCnt.ContainsKey(x) ? colCnt[x] : 0;
                         int cnt2 = colCnt.ContainsKey(x + d) ? colCnt[x + d] : 0;

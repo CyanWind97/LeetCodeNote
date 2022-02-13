@@ -5,7 +5,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 1725
-    /// title: ÒÔĞÎ³É×î´óÕı·½ĞÎµÄ¾ØĞÎÊıÄ¿
+    /// title: ä»¥å½¢æˆæœ€å¤§æ­£æ–¹å½¢çš„çŸ©å½¢æ•°ç›®
     /// problems: https://leetcode-cn.com/problems/number-of-rectangles-that-can-form-the-largest-square/
     /// date: 20220204
     /// </summary>
