@@ -11,30 +11,39 @@ namespace LeetCodeNote
     public static class Solution838
     {
         public static string PushDominoes(string dominoes) {
-            char[] s = dominoes.ToCharArray();
-            int n = s.Length, i = 0;
-            char left = 'L';
-            while (i < n) {
-                int j = i;
-                while (j < n && s[j] == '.') { // 找到一段连续的没有被推动的骨牌
-                    j++;
+            var chars = dominoes.ToCharArray();
+            int length = chars.Length;
+            int pre = 0;
+            for(int i = 1; i < length; i++){
+                if(pre == i || chars[i] == '.')
+                    continue;
+                    
+                int left = pre;
+                int right = i;
+                if(chars[i] == chars[pre] || (chars[pre] == '.' && chars[i] == 'L')){
+                    if(chars[i] == 'L')
+                        right = pre;
+                    else if(chars[i] == 'R')
+                        left = i;
+                }else if(chars[i] == 'R'){
+                    left = i;
+                    right = pre;
+                }else{
+                    int mid = (pre + i) / 2;
+                    left = mid + 1;
+                    right = mid - ((pre + i - 2 * mid) ^ 1);
                 }
-                char right = j < n ? s[j] : 'R';
-                if (left == right) { // 方向相同，那么这些竖立骨牌也会倒向同一方向
-                    while (i < j) {
-                        s[i++] = right;
-                    }
-                } else if (left == 'R' && right == 'L') { // 方向相对，那么就从两侧向中间倒
-                    int k = j - 1;
-                    while (i < k) {
-                        s[i++] = 'R';
-                        s[k--] = 'L';
-                    }
-                }
-                left = right;
-                i = j + 1;
+
+                Array.Fill(chars, 'L', left, Math.Max(0, i -  left));
+                Array.Fill(chars, 'R', pre + 1, Math.Max(0, right - pre ));
+
+                pre = chars[i] != 'R' ? i + 1 : i;
             }
-            return new string(s);
+            
+            if(pre < length && chars[pre] == 'R')
+                Array.Fill(chars, 'R', pre + 1, Math.Max(0, length - pre - 1));
+            
+            return new string(chars);
         }
     }
 }
