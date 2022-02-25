@@ -21,10 +21,7 @@ namespace LeetCodeNote
                 while(x < m){
                     var dir = grid[x][y];
                     int nextY =  y + dir;
-                    if(nextY < 0 || nextY >= n)
-                        break;
-                    
-                    if(grid[x][y] != grid[x][nextY])
+                    if(nextY < 0 || nextY >= n || dir != grid[x][nextY])
                         break;
 
                     x++;
