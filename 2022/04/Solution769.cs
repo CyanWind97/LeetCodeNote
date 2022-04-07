@@ -9,8 +9,7 @@ namespace LeetCodeNote
     public static class Solution769
     {
         public static bool RotateString(string s, string goal) {
-
-            return s.Length == goal.Length && (s + s).Contains(goal);
+            return s.Length == goal.Length && (s + s).IndexOf(goal) >= 0;
         }
     }
 }
