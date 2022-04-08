@@ -8,6 +8,7 @@ namespace LeetCodeNote
     /// </summary>
     public static class Solution769
     {
+        // IndexOf效率高于Contains?
         public static bool RotateString(string s, string goal) {
             return s.Length == goal.Length && (s + s).IndexOf(goal) >= 0;
         }
