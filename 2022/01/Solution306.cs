@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/additive-number/
     /// date: 20220110
     /// </summary>
-    public static class Solution396
+    public static class Solution306
     {
         public static bool IsAdditiveNumber(string num) {
             var nums = num.Select(c => c - '0').ToList();
