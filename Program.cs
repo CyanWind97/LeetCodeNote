@@ -24,7 +24,6 @@ namespace LeetCodeNote
             int[] customers = { 1, 0, 1, 2, 1, 1, 7, 5 };
             int[] grumpy = { 0, 1, 0, 1, 0, 1, 0, 1 };
             int X = 3;
-            string s = "ababbc";
             int k = 2;
             int[][] matrix ={
                 new int[]{2,2,-1},
@@ -47,14 +46,10 @@ namespace LeetCodeNote
                 new int[]{2,1},
             };
 
-            var arr1 = new int[]{2, 1, 4};
-            var arr2 = new int[]{1, 0, 3};
-
-            var node1 = new Solution1305.TreeNode(2, new Solution1305.TreeNode(1), new Solution1305.TreeNode(4));
-            var node2 = new Solution1305.TreeNode(1, new Solution1305.TreeNode(0), new Solution1305.TreeNode(3));
+            var s = "<DIV>This is the first line <![CDATA[<div>]]></DIV>";
 
             var words = "!g 3 !sy ";
-            var result = Solution1305.GetAllElements(node1, node2);
+            var result = Solution591.IsValid(s);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");

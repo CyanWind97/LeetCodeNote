@@ -4,6 +4,12 @@ using System.Linq;
 
 namespace LeetCodeNote
 {
+    /// <summary>
+    /// no: 1305
+    /// title: 两棵二叉搜索树中的所有元素
+    /// problems: https://leetcode-cn.com/problems/all-elements-in-two-binary-search-trees/
+    /// date: 20220501
+    /// </summary>
 
     public static class Solution1305
     {
