@@ -47,8 +47,14 @@ namespace LeetCodeNote
                 new int[]{2,1},
             };
 
+            var arr1 = new int[]{2, 1, 4};
+            var arr2 = new int[]{1, 0, 3};
+
+            var node1 = new Solution1305.TreeNode(2, new Solution1305.TreeNode(1), new Solution1305.TreeNode(4));
+            var node2 = new Solution1305.TreeNode(1, new Solution1305.TreeNode(0), new Solution1305.TreeNode(3));
+
             var words = "!g 3 !sy ";
-            var result = Solution2047.CountValidWords(words);
+            var result = Solution1305.GetAllElements(node1, node2);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
