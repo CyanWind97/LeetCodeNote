@@ -11,6 +11,12 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
+            // TestLeetCode();
+            TestCodeTop();
+        }
+
+        public static void TestLeetCode()
+        {
             int[] nums = { 5, 0, 0, 0 };
             int n = 13;
             int m = 2;
@@ -53,6 +59,26 @@ namespace LeetCodeNote
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
+        }
+
+        public static void TestCodeTop()
+        {
+            var s = "[3,5,1,6,2,0,8,null,null,7,4]";
+            var k = 2;
+
+            var arr = JsonSerializer.Deserialize<int?[]>(s);
+            
+            var nodes = arr.Select(x => x.HasValue ? new CodeTop.CodeTop236.TreeNode(x.Value) : null).ToArray();
+
+            for(int i = 0; i < arr.Length; i++){
+                if(2 * i + 1 < arr.Length)
+                    nodes[i].left = nodes[2 * i + 1];
+                
+                if(2 * i + 2 < arr.Length)
+                    nodes[i].right = nodes[2 * i + 2];
+            }
+
+            var result = CodeTop.CodeTop236.LowestCommonAncestor(nodes[0], nodes[1], nodes.Last());
         }
     }
 }
