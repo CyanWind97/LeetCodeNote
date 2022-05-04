@@ -63,22 +63,22 @@ namespace LeetCodeNote
 
         public static void TestCodeTop()
         {
-            var s = "[3,5,1,6,2,0,8,null,null,7,4]";
+            var s = "[[1,0]]";
             var k = 2;
 
-            var arr = JsonSerializer.Deserialize<int?[]>(s);
+            var arr = JsonSerializer.Deserialize<int[][]>(s);
             
-            var nodes = arr.Select(x => x.HasValue ? new CodeTop.CodeTop236.TreeNode(x.Value) : null).ToArray();
+            // var nodes = arr.Select(x => x.HasValue ? new CodeTop.CodeTop236.TreeNode(x.Value) : null).ToArray();
 
-            for(int i = 0; i < arr.Length; i++){
-                if(2 * i + 1 < arr.Length)
-                    nodes[i].left = nodes[2 * i + 1];
+            // for(int i = 0; i < arr.Length; i++){
+            //     if(2 * i + 1 < arr.Length)
+            //         nodes[i].left = nodes[2 * i + 1];
                 
-                if(2 * i + 2 < arr.Length)
-                    nodes[i].right = nodes[2 * i + 2];
-            }
+            //     if(2 * i + 2 < arr.Length)
+            //         nodes[i].right = nodes[2 * i + 2];
+            // }
 
-            var result = CodeTop.CodeTop236.LowestCommonAncestor(nodes[0], nodes[1], nodes.Last());
+            var result = CodeTop.CodeTop207.CanFinish(2, arr);
         }
     }
 }
