@@ -63,10 +63,10 @@ namespace LeetCodeNote
 
         public static void TestCodeTop()
         {
-            var s = "[[1,0]]";
+            var s = "[5,1,2,3,4]";
             var k = 2;
 
-            var arr = JsonSerializer.Deserialize<int[][]>(s);
+            var arr = JsonSerializer.Deserialize<int[]>(s);
             
             // var nodes = arr.Select(x => x.HasValue ? new CodeTop.CodeTop236.TreeNode(x.Value) : null).ToArray();
 
@@ -78,7 +78,7 @@ namespace LeetCodeNote
             //         nodes[i].right = nodes[2 * i + 2];
             // }
 
-            var result = CodeTop.CodeTop207.CanFinish(2, arr);
+            var result = CodeTop.CodeTop33.Search(arr, 1);
         }
     }
 }
