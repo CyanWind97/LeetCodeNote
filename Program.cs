@@ -11,13 +11,13 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            // TestLeetCode();
-            TestCodeTop();
+            TestLeetCode();
+            // TestCodeTop();
         }
 
         public static void TestLeetCode()
         {
-            int[] nums = { 5, 0, 0, 0 };
+            int[] nums = { 10, 5, 2, 6};
             int n = 13;
             int m = 2;
             int[] group = { -1, -1, 1, 0, 0, 1, 0, -1 };
@@ -55,7 +55,7 @@ namespace LeetCodeNote
             var s = "<DIV>This is the first line <![CDATA[<div>]]></DIV>";
 
             var words = "!g 3 !sy ";
-            var result = Solution591.IsValid(s);
+            var result = Solution713.NumSubarrayProductLessThanK(nums, 100);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
