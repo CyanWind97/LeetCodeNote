@@ -11,8 +11,8 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            TestLeetCode();
-            // TestCodeTop();
+            // TestLeetCode();
+            TestCodeTop();
         }
 
         public static void TestLeetCode()
@@ -78,7 +78,7 @@ namespace LeetCodeNote
             //         nodes[i].right = nodes[2 * i + 2];
             // }
 
-            var result = CodeTop.CodeTop207.CanFinish(2, arr);
+            var result = CodeTop.CodeTop4.FindMedianSortedArrays_1(new int[]{1, 2}, new int[]{3, 4});
         }
     }
 }
