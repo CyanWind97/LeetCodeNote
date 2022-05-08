@@ -66,27 +66,26 @@ namespace LeetCodeNote
             var s = "[1,2,3,null,null,4,5,null, null,7, null, null, 6,8]";
             var k = 2;
 
-            var arr = JsonSerializer.Deserialize<int?[]>(s);
+            // var arr = JsonSerializer.Deserialize<int?[]>(s);
             
-            var nodes = arr.Select(x => x.HasValue ? new CodeTop.CodeTop297.TreeNode(x.Value) : null).ToArray();
-            int nullCount = 0;
+            // var nodes = arr.Select(x => x.HasValue ? new CodeTop.CodeTop297.TreeNode(x.Value) : null).ToArray();
+            // int nullCount = 0;
 
-            for(int i = 0; i < arr.Length; i++){
-                if(nodes[i] == null){
-                    nullCount++;
-                    continue;
-                }
+            // for(int i = 0; i < arr.Length; i++){
+            //     if(nodes[i] == null){
+            //         nullCount++;
+            //         continue;
+            //     }
 
-                if(2 * i + 1 - 2 * nullCount < arr.Length)
-                    nodes[i].left = nodes[2 * i + 1  - 2 * nullCount];
+            //     if(2 * i + 1 - 2 * nullCount < arr.Length)
+            //         nodes[i].left = nodes[2 * i + 1  - 2 * nullCount];
                 
-                if(2 * i + 2  - 2 * nullCount < arr.Length)
-                    nodes[i].right = nodes[2 * i + 2  - 2 * nullCount];
-            }
+            //     if(2 * i + 2  - 2 * nullCount < arr.Length)
+            //         nodes[i].right = nodes[2 * i + 2  - 2 * nullCount];
+            // }
 
-            var codec = new CodeTop.CodeTop297.Codec();
-            var result = codec.serialize(nodes[0]);
-            var x = codec.deserialize(result);
+            // var codec = new CodeTop.CodeTop297.Codec();
+            var result =  CodeTop.CodeTop560.SubarraySum(new int[]{1}, 0);
         }
     }
 }
