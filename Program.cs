@@ -63,22 +63,29 @@ namespace LeetCodeNote
 
         public static void TestCodeTop()
         {
-            var s = "[[1,0]]";
+            var s = "[1,2,3,null,null,4,5,null, null,7, null, null, 6,8]";
             var k = 2;
 
-            var arr = JsonSerializer.Deserialize<int[][]>(s);
+            // var arr = JsonSerializer.Deserialize<int?[]>(s);
             
-            // var nodes = arr.Select(x => x.HasValue ? new CodeTop.CodeTop236.TreeNode(x.Value) : null).ToArray();
+            // var nodes = arr.Select(x => x.HasValue ? new CodeTop.CodeTop297.TreeNode(x.Value) : null).ToArray();
+            // int nullCount = 0;
 
             // for(int i = 0; i < arr.Length; i++){
-            //     if(2 * i + 1 < arr.Length)
-            //         nodes[i].left = nodes[2 * i + 1];
+            //     if(nodes[i] == null){
+            //         nullCount++;
+            //         continue;
+            //     }
+
+            //     if(2 * i + 1 - 2 * nullCount < arr.Length)
+            //         nodes[i].left = nodes[2 * i + 1  - 2 * nullCount];
                 
-            //     if(2 * i + 2 < arr.Length)
-            //         nodes[i].right = nodes[2 * i + 2];
+            //     if(2 * i + 2  - 2 * nullCount < arr.Length)
+            //         nodes[i].right = nodes[2 * i + 2  - 2 * nullCount];
             // }
 
-            var result = CodeTop.CodeTop4.FindMedianSortedArrays_1(new int[]{1, 2}, new int[]{3, 4});
+            // var codec = new CodeTop.CodeTop297.Codec();
+            var result =  CodeTop.CodeTop560.SubarraySum(new int[]{1}, 0);
         }
     }
 }
