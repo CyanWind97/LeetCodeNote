@@ -85,7 +85,7 @@ namespace LeetCodeNote
             // }
 
             // var codec = new CodeTop.CodeTop297.Codec();
-            var result =  CodeTop.CodeTop23.LongestValidParentheses("()(()");
+            var result =  CodeTop.CodeTop41.FirstMissingPositive(new int[]{1, 1});
         }
     }
 }
