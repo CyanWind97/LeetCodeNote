@@ -54,8 +54,6 @@ namespace LeetCodeNote
                 if(size == 1)
                     return new Node(val, true);
                 
-                bool childSingle;
-                
                 var subSize = size / 2;
                 var topLeft = Construct(r, c, subSize);
                 isLeaf = isLeaf && topLeft.isLeaf && val == topLeft.val;

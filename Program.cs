@@ -11,8 +11,8 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            // TestLeetCode();
-            TestCodeTop();
+            TestLeetCode();
+            // TestCodeTop();
         }
 
         public static void TestLeetCode()
@@ -52,10 +52,11 @@ namespace LeetCodeNote
                 new int[]{2,1},
             };
 
-            var s = "<DIV>This is the first line <![CDATA[<div>]]></DIV>";
+            var s = "[\"####F\",\"#C...\",\"M....\"]";
 
-            var words = "!g 3 !sy ";
-            var result = Solution713.NumSubarrayProductLessThanK(nums, 100);
+            var test = JsonSerializer.Deserialize<string[]>(s);
+            // var result = (new Solution1728_1()).CanMouseWin(test, 1, 2);
+            var result = Solution1728.CanMouseWin(test, 1, 2);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
