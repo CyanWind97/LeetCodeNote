@@ -11,8 +11,8 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            TestLeetCode();
-            // TestCodeTop();
+            // TestLeetCode();
+            TestCodeTop();
         }
 
         public static void TestLeetCode()
@@ -86,7 +86,7 @@ namespace LeetCodeNote
             // }
 
             // var codec = new CodeTop.CodeTop297.Codec();
-            var result =  CodeTop.CodeTop41.FirstMissingPositive(new int[]{1, 1});
+            var result =  CodeTop.CodeTop47.PermuteUnique(new int[]{1,1,2});
         }
     }
 }
