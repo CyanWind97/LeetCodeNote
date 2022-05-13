@@ -11,8 +11,8 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            TestLeetCode();
-            // TestCodeTop();
+            // TestLeetCode();
+            TestCodeTop();
         }
 
         public static void TestLeetCode()
@@ -64,7 +64,7 @@ namespace LeetCodeNote
 
         public static void TestCodeTop()
         {
-            var s = "[1,2,3,null,null,4,5,null, null,7, null, null, 6,8]";
+            var s = @"[1,2,3,null,null,4,5,null, null,7, null, null, 6,8]";
             var k = 2;
 
             // var arr = JsonSerializer.Deserialize<int?[]>(s);
@@ -86,7 +86,7 @@ namespace LeetCodeNote
             // }
 
             // var codec = new CodeTop.CodeTop297.Codec();
-            var result =  CodeTop.CodeTop93.RestoreIpAddresses("25525511135");
+            var result =  CodeTop.CodeTop752.OpenLock_1(new string[] {"8888"}, "0009");
         }
     }
 }
