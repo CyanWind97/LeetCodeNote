@@ -86,7 +86,7 @@ namespace LeetCodeNote
             // }
 
             // var codec = new CodeTop.CodeTop297.Codec();
-            var result =  CodeTop.CodeTop47.PermuteUnique(new int[]{1,1,2});
+            var result =  CodeTop.CodeTop93.RestoreIpAddresses("25525511135");
         }
     }
 }
