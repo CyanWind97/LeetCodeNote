@@ -11,8 +11,8 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            // TestLeetCode();
-            TestCodeTop();
+            TestLeetCode();
+            // TestCodeTop();
         }
 
         public static void TestLeetCode()
@@ -56,7 +56,7 @@ namespace LeetCodeNote
 
             var test = JsonSerializer.Deserialize<string[]>(s);
             // var result = (new Solution1728_1()).CanMouseWin(test, 1, 2);
-            var result = Solution1728.CanMouseWin(test, 1, 2);
+            var result = Solution_lcci_01_05.OneEditAway("horse", "ros");
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
