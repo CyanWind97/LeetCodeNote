@@ -56,11 +56,7 @@ namespace LeetCodeNote
 
             var test = JsonSerializer.Deserialize<string[]>(s);
             // var result = (new Solution1728_1()).CanMouseWin(test, 1, 2);
-<<<<<<< HEAD
             var result = Solution691.MinStickers(test, "togetherhand");
-=======
-            var result = Solution_lcci_01_05.OneEditAway("horse", "ros");
->>>>>>> daf287531c8d105c6041b5a420f9d0c3334c6dc6
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
