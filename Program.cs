@@ -11,8 +11,8 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            TestLeetCode();
-            // TestCodeTop();
+            // TestLeetCode();
+            TestCodeTop();
         }
 
         public static void TestLeetCode()
@@ -86,7 +86,7 @@ namespace LeetCodeNote
             // }
 
             // var codec = new CodeTop.CodeTop297.Codec();
-            var result =  CodeTop.CodeTop93.RestoreIpAddresses("25525511135");
+            var result =  CodeTop.CodeTop_lcof_51.ReversePairs(new int[]{7, 5, 6, 4});
         }
     }
 }
