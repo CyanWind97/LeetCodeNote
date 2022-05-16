@@ -86,17 +86,15 @@ namespace LeetCodeNote
             //         nodes[i].right = nodes[2 * i + 2  - 2 * nullCount];
             // }
 
-            var arr = new int[]{1, 4, 3, 2, 5};
-            var head = new CodeTop.CodeTop92.ListNode();
+            var arr = new int[]{1,2,3,4};
+            var head = new CodeTop.CodeTop24.ListNode();
             var cur = head;
             for(int i = 0; i < arr.Length; i++){
-                cur.next = new CodeTop.CodeTop92.ListNode(arr[i]);
+                cur.next = new CodeTop.CodeTop24.ListNode(arr[i]);
                 cur = cur.next;
             }
             
-
-            // var result =  
-            CodeTop189.Rotate(new int[]{-1,-100,3,99}, 2);
+            var result = CodeTop.CodeTop24.SwapPairs(head.next);
         }
     }
 }
