@@ -52,11 +52,11 @@ namespace LeetCodeNote
                 new int[]{2,1},
             };
 
-            var s = "[\"####F\",\"#C...\",\"M....\"]";
+            var s = "[\"write\",\"their\",\"read\",\"quiet\",\"against\",\"down\",\"process\",\"check\"]";
 
             var test = JsonSerializer.Deserialize<string[]>(s);
             // var result = (new Solution1728_1()).CanMouseWin(test, 1, 2);
-            var result = Solution_lcci_01_05.OneEditAway("horse", "ros");
+            var result = Solution691.MinStickers(test, "togetherhand");
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
@@ -86,7 +86,15 @@ namespace LeetCodeNote
             // }
 
             // var codec = new CodeTop.CodeTop297.Codec();
-            var result =  CodeTop.CodeTop752.OpenLock_1(new string[] {"8888"}, "0009");
+            var arr = new int[4]{4, 3, 1, 2};
+            var head = new CodeTop.CodeTop148.ListNode();
+            var cur = head;
+            for(int i = 0; i < arr.Length; i++){
+                cur.next = new CodeTop.CodeTop148.ListNode(arr[i]);
+                cur = cur.next;
+            }
+
+            var result =  CodeTop.CodeTop148.SortList_1(head.next);
         }
     }
 }
