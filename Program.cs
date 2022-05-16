@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Linq;
+using LeetCodeNote.CodeTop;
 
 namespace LeetCodeNote
 {
@@ -85,16 +86,17 @@ namespace LeetCodeNote
             //         nodes[i].right = nodes[2 * i + 2  - 2 * nullCount];
             // }
 
-            // var codec = new CodeTop.CodeTop297.Codec();
-            var arr = new int[4]{4, 3, 1, 2};
-            var head = new CodeTop.CodeTop148.ListNode();
+            var arr = new int[]{1, 4, 3, 2, 5};
+            var head = new CodeTop.CodeTop92.ListNode();
             var cur = head;
             for(int i = 0; i < arr.Length; i++){
-                cur.next = new CodeTop.CodeTop148.ListNode(arr[i]);
+                cur.next = new CodeTop.CodeTop92.ListNode(arr[i]);
                 cur = cur.next;
             }
+            
 
-            var result =  CodeTop.CodeTop148.SortList_1(head.next);
+            // var result =  
+            CodeTop189.Rotate(new int[]{-1,-100,3,99}, 2);
         }
     }
 }
