@@ -43,21 +43,18 @@ namespace LeetCodeNote.CodeTop
                 }
 
                 for(int i = 0; i < n; i++){
-                    if(columns.Contains(i))
+                    if(!columns.Add(i))
                         continue;
                     
                     int diagonal1 = row - i;
-                    if(diagonals1.Contains(diagonal1))
+                    if(!diagonals1.Add(diagonal1))
                         continue;
                     
                     int diagonal2 = row + i;
-                    if(diagonals2.Contains(diagonal2))
+                    if(!diagonals2.Add(diagonal2))
                         continue;
                     
                     queues[row] = i;
-                    columns.Add(i);
-                    diagonals1.Add(diagonal1);
-                    diagonals2.Add(diagonal2);
                     
                     BackTrack(row + 1);
                     queues[row] = -1;
