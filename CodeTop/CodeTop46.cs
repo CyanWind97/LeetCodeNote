@@ -4,7 +4,7 @@ using System.Linq;
 namespace LeetCodeNote.CodeTop
 {
     /// <summary>
-    /// no: 45
+    /// no: 46
     /// title:  全排列
     /// problems: https://leetcode.cn/problems/permutations/
     /// date: 20220512

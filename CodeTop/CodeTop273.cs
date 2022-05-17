@@ -1,14 +1,15 @@
 using System.Collections.Generic;
 
-namespace LeetCodeNote
+namespace LeetCodeNote.CodeTop
 {
     /// <summary>
     /// no: 273
-    /// title: 整数转换英文表示
+    /// title:  整数转换英文表示
     /// problems: https://leetcode-cn.com/problems/integer-to-english-words/
-    /// date: 20211011
-    /// </summary>
-    public static class Solution273
+    /// date: 20220512
+    /// priority: 0073
+    /// time: 00:25:58.06
+    public static class CodeTop273
     {
         private static string[] _numberMaps = new string[]
             { "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", 
