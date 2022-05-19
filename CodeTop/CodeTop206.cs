@@ -36,7 +36,7 @@ namespace LeetCodeNote.CodeTop
                 cur = next;
             }
             
-            return cur;
+            return pre;
         }
 
         // 递归法

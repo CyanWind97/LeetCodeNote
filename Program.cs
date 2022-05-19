@@ -12,8 +12,8 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            TestLeetCode();
-            // TestCodeTop();
+            // TestLeetCode();
+            TestCodeTop();
         }
 
         public static void TestLeetCode()
@@ -86,15 +86,16 @@ namespace LeetCodeNote
             //         nodes[i].right = nodes[2 * i + 2  - 2 * nullCount];
             // }
 
-            var arr = new int[]{3,30,34,5,9};
-            // var head = new CodeTop.CodeTop24.ListNode();
-            // var cur = head;
-            // for(int i = 0; i < arr.Length; i++){
-            //     cur.next = new CodeTop.CodeTop24.ListNode(arr[i]);
-            //     cur = cur.next;
-            // }
+            var arr = new int[]{1,2,3,4,5};
+            var head = new CodeTop.CodeTop143.ListNode();
+            var cur = head;
+            for(int i = 0; i < arr.Length; i++){
+                cur.next = new CodeTop.CodeTop143.ListNode(arr[i]);
+                cur = cur.next;
+            }
             
-            var result = CodeTop.CodeTop179.LargestNumber(arr);
+            //var result = 
+            CodeTop.CodeTop143.ReorderList(head.next);
         }
     }
 }
