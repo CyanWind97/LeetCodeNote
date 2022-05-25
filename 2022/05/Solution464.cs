@@ -28,14 +28,14 @@ namespace LeetCodeNote
                                 break;
                             }
 
-                            if(!DFS(usedNumbers | (1 << i), current + usedNumbers + i + 1)){
+                            if(!DFS(usedNumbers | (1 << i), current + i + 1)){
                                 result = true;
                                 break;
                             }
                         }
-
-                        memo.Add(usedNumbers, result);
                     }
+                    
+                    memo.Add(usedNumbers, result);
                 }
 
                 return memo[usedNumbers];
