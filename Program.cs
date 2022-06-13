@@ -12,8 +12,8 @@ namespace LeetCodeNote
     {
         static void Main(string[] args)
         {
-            // TestLeetCode();
-            TestCodeTop();
+            TestLeetCode();
+            // TestCodeTop();
         }
 
         public static void TestLeetCode()
@@ -33,7 +33,8 @@ namespace LeetCodeNote
             int X = 3;
             int k = 2;
             int[][] matrix ={
-                new int[]{2,2,-1},
+                new int[]{1,2,3},
+                new int[]{4,5,6},
             };
             
             int[] stones = new int[] { 0, 1, 3, 5, 6, 8, 12, 17 };
@@ -57,7 +58,7 @@ namespace LeetCodeNote
 
             var test = JsonSerializer.Deserialize<string[]>(s);
             // var result = (new Solution1728_1()).CanMouseWin(test, 1, 2);
-            var result = Solution668.FindKthNumber(45,12, 471);
+            var result = Solution498.FindDiagonalOrder(matrix);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
