@@ -56,9 +56,14 @@ namespace LeetCodeNote
 
             var s = "[\"write\",\"their\",\"read\",\"quiet\",\"against\",\"down\",\"process\",\"check\"]";
 
-            var test = JsonSerializer.Deserialize<string[]>(s);
-            // var result = (new Solution1728_1()).CanMouseWin(test, 1, 2);
-            var result = Solution498.FindDiagonalOrder(matrix);
+            var nodeVals = new int[]{1};
+            var nodes = nodeVals.Select(x => new Solution_lcof_29.Node(x)).ToArray();
+            for(int i = 0; i < nodes.Length; i++){
+                nodes[i].next = nodes[(i + 1) % nodes.Length];
+            }
+
+            // var test = JsonSerializer.Deserialize<string[]>(s);
+            var result = Solution_lcof_29.Insert(nodes[0], 0);
 
             Console.WriteLine(result);
             Console.WriteLine("Hello World!");
