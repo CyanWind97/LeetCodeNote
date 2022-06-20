@@ -25,7 +25,7 @@ namespace LeetCodeNote
                 var leftIndex = _intervals.BinarySearch(left);
                 var rightIndex = _intervals.BinarySearch(right);
 
-                // left != right 可能的情况只有都下标小于0的情况
+                // left != right 可能的情况只有都下标小于0
                 if (leftIndex == rightIndex){
                     leftIndex = ~leftIndex;
                     // 不在已有区间内，才插入区间
@@ -50,7 +50,7 @@ namespace LeetCodeNote
                 if (rightIndex < 0){
                     rightIndex = ~rightIndex;
                     
-                    // right值不在已有区间内时，更新最近区间的右边界
+                    // right值不在已有区间内时，更新上一个区间的右边界
                     if(rightIndex % 2 == 0){
                         rightIndex--;
                         _intervals[rightIndex] = right;
@@ -82,7 +82,7 @@ namespace LeetCodeNote
                 var leftIndex = _intervals.BinarySearch(left);
                 var rightIndex = _intervals.BinarySearch(right);
 
-                // left != right 可能的情况只有都下标小于0的情况
+                // left != right 可能的情况只有都下标小于0
                 if (leftIndex == rightIndex){
                     leftIndex = ~leftIndex;
                     // 落在已有区间内，才拆分区间
