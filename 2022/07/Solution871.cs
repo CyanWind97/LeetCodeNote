@@ -7,7 +7,7 @@ namespace LeetCodeNote
     /// no: 871
     /// title: 最低加油次数
     /// problems: https://leetcode.cn/problems/minimum-number-of-refueling-stops/
-    /// date: 202200702
+    /// date: 20220702
     /// </summary>
     public static class Solution871
     {

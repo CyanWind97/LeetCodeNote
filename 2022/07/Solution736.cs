@@ -7,7 +7,7 @@ namespace LeetCodeNote
     /// no: 736
     /// title: Lisp 语法解析
     /// problems: https://leetcode.cn/problems/parse-lisp-expression/
-    /// date: 202200706
+    /// date: 20220706
     /// </summary>
     public static class Solution736
     {

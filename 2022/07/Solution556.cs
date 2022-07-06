@@ -7,7 +7,7 @@ namespace LeetCodeNote
     /// no: 556
     /// title: 下一个更大元素 III
     /// problems: https://leetcode.cn/problems/next-greater-element-iii/
-    /// date: 202200703
+    /// date: 20220703
     /// </summary>
     public static class Solution556
     {

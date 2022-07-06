@@ -7,7 +7,7 @@ namespace LeetCodeNote
     /// no: 729
     /// title: 我的日程安排表 I
     /// problems: https://leetcode.cn/problems/my-calendar-i/
-    /// date: 202200705
+    /// date: 20220705
     /// </summary>
     public static class Solution729
     {

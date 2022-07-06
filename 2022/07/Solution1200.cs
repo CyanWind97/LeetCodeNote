@@ -7,7 +7,7 @@ namespace LeetCodeNote
     /// no: 1200
     /// title: 最小绝对差
     /// problems: https://leetcode.cn/problems/minimum-absolute-difference/
-    /// date: 202200704
+    /// date: 20220704
     /// </summary>
     public static class Solution1200
     {

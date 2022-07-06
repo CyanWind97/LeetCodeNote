@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// no: 241
     /// title: 为运算表达式设计优先级
     /// problems: https://leetcode.cn/problems/different-ways-to-add-parentheses/
-    /// date: 202200701
+    /// date: 20220701
     /// </summary>
     public static class Solution241
     {
