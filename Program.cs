@@ -63,9 +63,13 @@ namespace LeetCodeNote
             }
 
             // var test = JsonSerializer.Deserialize<string[]>(s);
-            var result = Solution_lcof_29.Insert(nodes[0], 0);
+            // var result = Solution_lcof_29.Insert(nodes[0], 0);
+            //Console.WriteLine(result);
 
-            Console.WriteLine(result);
+            var words = new string[]{"apple"};
+            var test = new Solution745.WordFilter(words);
+            var result = test.F("a", "e");
+
             Console.WriteLine("Hello World!");
         }
 
