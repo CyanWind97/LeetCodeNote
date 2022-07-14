@@ -62,13 +62,28 @@ namespace LeetCodeNote
                 nodes[i].next = nodes[(i + 1) % nodes.Length];
             }
 
-            // var test = JsonSerializer.Deserialize<string[]>(s);
-            // var result = Solution_lcof_29.Insert(nodes[0], 0);
-            //Console.WriteLine(result);
+            var node1 = new Solution558.Node()
+            {
+                isLeaf = false,
+                val = false,
+                topLeft = new Solution558.Node(false, true),
+                topRight = new Solution558.Node(false, true),
+                bottomLeft = new Solution558.Node(true, true),
+                bottomRight = new Solution558.Node(true, true),
+            };
 
-            var words = new string[]{"apple"};
-            var test = new Solution745.WordFilter(words);
-            var result = test.F("a", "e");
+            var node2 = new Solution558.Node()
+            {
+                isLeaf = false,
+                val = false,
+                topLeft = new Solution558.Node(true, true),
+                topRight = new Solution558.Node(true, true),
+                bottomLeft = new Solution558.Node(false, true),
+                bottomRight = new Solution558.Node(true, true),
+            };
+
+            var result = Solution558.Intersect(node1, node2);
+            Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
         }
