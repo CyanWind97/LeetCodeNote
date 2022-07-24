@@ -62,27 +62,12 @@ namespace LeetCodeNote
                 nodes[i].next = nodes[(i + 1) % nodes.Length];
             }
 
-            var node1 = new Solution558.Node()
-            {
-                isLeaf = false,
-                val = false,
-                topLeft = new Solution558.Node(false, true),
-                topRight = new Solution558.Node(false, true),
-                bottomLeft = new Solution558.Node(true, true),
-                bottomRight = new Solution558.Node(true, true),
-            };
+            var test = new Solution919.CBTInserter(new Solution919.TreeNode(1, new Solution919.TreeNode(2)));
+            // test.Insert(2);
+            test.Insert(3);
+            test.Insert(4);
 
-            var node2 = new Solution558.Node()
-            {
-                isLeaf = false,
-                val = false,
-                topLeft = new Solution558.Node(true, true),
-                topRight = new Solution558.Node(true, true),
-                bottomLeft = new Solution558.Node(false, true),
-                bottomRight = new Solution558.Node(true, true),
-            };
-
-            var result = Solution558.Intersect(node1, node2);
+            var result = test.Get_root();
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
