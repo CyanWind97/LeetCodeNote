@@ -4,7 +4,7 @@ namespace LeetCodeNote
     /// no: 623
     /// title:  在二叉树中增加一行
     /// problems: https://leetcode.cn/problems/add-one-row-to-tree/
-    /// date: 20220803
+    /// date: 20220805
     /// </summary>
     public static class Solution623
     {
