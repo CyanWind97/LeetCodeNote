@@ -62,15 +62,9 @@ namespace LeetCodeNote
                 nodes[i].next = nodes[(i + 1) % nodes.Length];
             }
 
-            var n0 = new Solution1161.TreeNode(-20);
-            var n1 = new Solution1161.TreeNode(-5);
-            var n2 = new Solution1161.TreeNode(-10);
-            var n3 = new Solution1161.TreeNode(-200, n0, n1);
-            var n4 = new Solution1161.TreeNode(-300, n2);
-            var n5 = new Solution1161.TreeNode(-100, n3, n4);
+            var logs = new string[] {"0:start:0","1:start:2","1:end:5","0:end:6"};
 
-
-            var result = Solution1161.MaxLevelSum(n5);
+            var result = Solution636.ExclusiveTime(2, logs);
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
