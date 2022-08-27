@@ -2,12 +2,12 @@ using System;
 namespace LeetCodeNote
 {
     /// <summary>
-    /// no: 893
+    /// no: 793
     /// title: 阶乘函数后K个零
     /// problems: https://leetcode-cn.com/problems/preimage-size-of-factorial-zeroes-function/
     /// date: 20201216
     /// </summary>
-    public static class Solution793
+    public static partial class Solution793
     {   
         // 假设 K + n =  5x + x + x/5 + x/25 + ... (n >= 0)
         // (K + n) -  (K + n) / 5 = 5x
@@ -17,8 +17,8 @@ namespace LeetCodeNote
         // y = y / 5 = 5, y % 5 = 0; count = 2;
         // 令sum = 5y + y + y/5 + ....
         // 当 K 属于 [sum - count, sum) U (sum + 4, ...)时，返回0，否则返回5
-        public static int PreimageSizeFZF(int K) {
-            int x = K -  K / 5;
+        public static int PreimageSizeFZF(int k) {
+            int x = k -  k / 5;
             while(x % 5 != 0){
                 x++;
             }
@@ -36,7 +36,7 @@ namespace LeetCodeNote
                 x /= 5;
             }
 
-            return ((K >= sum - count && K < sum) || (K > sum && K - sum > 4)) ? 0 : 5;
+            return ((k >= sum - count && k < sum) || (k > sum && k - sum > 4)) ? 0 : 5;
         }
 
 
