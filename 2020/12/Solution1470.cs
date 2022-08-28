@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/shuffle-the-array/
     /// date: 20201216
     /// </summary>
-    public static class Solution1470
+    public static partial class Solution1470
     {
         public static int[] Shuffle(int[] nums, int n) {
             int[] result = new int[2 * n];
