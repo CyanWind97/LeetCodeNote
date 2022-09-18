@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    /// <summary>
     /// no: 827
     /// title: 最大人工岛
     /// problems: https://leetcode.cn/problems/making-a-large-island/
