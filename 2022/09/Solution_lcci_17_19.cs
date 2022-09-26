@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// no: 17.19
     /// title: 17.19. 消失的两个数字
     /// problems: https://leetcode.cn/problems/missing-two-lcci/
-    /// date: 20220516
+    /// date: 20220926
     /// type: 面试题 lcci
     /// </summary>
     public static class Solution_lcci_17_19
