@@ -64,7 +64,7 @@ namespace LeetCodeNote
 
             var logs = new string[] {"0:start:0","1:start:2","1:end:5","0:end:6"};
 
-            var result = Solution636.ExclusiveTime(2, logs);
+            var result = Solution_lcci_17_09.GetKthMagicNumber(12);
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
