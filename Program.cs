@@ -25,7 +25,6 @@ namespace LeetCodeNote
             int[][] edges = new int[][] { };
             string[] strs = { "tars", "tars", "rats", "arts", "star", "aba" };
             char[] chars = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
-            int[] arr = { 2, 3, 2, 3, 2, 3 };
             int[] A = { 0, 1, 0 };
             int[] row = { 5, 4, 2, 6, 3, 1, 0, 7 };
             int[] customers = { 1, 0, 1, 2, 1, 1, 7, 5 };
@@ -56,15 +55,17 @@ namespace LeetCodeNote
 
             var s = "[\"write\",\"their\",\"read\",\"quiet\",\"against\",\"down\",\"process\",\"check\"]";
 
-            var nodeVals = new int[]{1};
-            var nodes = nodeVals.Select(x => new Solution_lcof_29.Node(x)).ToArray();
-            for(int i = 0; i < nodes.Length; i++){
-                nodes[i].next = nodes[(i + 1) % nodes.Length];
-            }
+            // var nodeVals = new int[]{1};
+            // var nodes = nodeVals.Select(x => new Solution_lcof_29.Node(x)).ToArray();
+            // for(int i = 0; i < nodes.Length; i++){
+            //     nodes[i].next = nodes[(i + 1) % nodes.Length];
+            // }
 
-            var logs = new string[] {"0:start:0","1:start:2","1:end:5","0:end:6"};
+            // var logs = new string[] {"0:start:0","1:start:2","1:end:5","0:end:6"};
 
-            var result = Solution_lcci_17_09.GetKthMagicNumber(12);
+            var arr = new int[]{1,0,2,3,4};
+
+            var result = Solution769.MaxChunksToSorted(arr);
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
