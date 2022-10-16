@@ -63,9 +63,9 @@ namespace LeetCodeNote
 
             // var logs = new string[] {"0:start:0","1:start:2","1:end:5","0:end:6"};
 
-            var arr = new int[]{1,0,2,3,4};
+            var arr = new int[]{0,1,2,2};
 
-            var result = Solution769.MaxChunksToSorted(arr);
+            var result = Solution904.TotalFruit(arr);
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
