@@ -65,7 +65,7 @@ namespace LeetCodeNote
 
             var arr = new int[]{0,1,2,2};
 
-            var result = Solution904.TotalFruit(arr);
+            var result = Solution779.KthGrammar(16, 60);
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
