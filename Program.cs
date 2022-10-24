@@ -53,6 +53,11 @@ namespace LeetCodeNote
                 new int[]{2,1},
             };
 
+            var grid = new int[][]{
+                new int[]{0,1},
+                new int[]{1,0},
+            };
+
             var s = "[\"write\",\"their\",\"read\",\"quiet\",\"against\",\"down\",\"process\",\"check\"]";
 
             // var nodeVals = new int[]{1};
@@ -65,7 +70,7 @@ namespace LeetCodeNote
 
             var arr = new int[]{0,1,2,2};
 
-            var result = Solution779.KthGrammar(16, 60);
+            var result = Solution934.ShortestBridge(grid);
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
