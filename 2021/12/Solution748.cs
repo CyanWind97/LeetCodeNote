@@ -4,12 +4,12 @@ using System.Linq;
 namespace LeetCodeNote
 {
     /// <summary>
-    /// no: 784
+    /// no: 748
     /// title:  最短补全词
     /// problems: https://leetcode-cn.com/problems/shortest-completing-word/
     /// date: 20211210
     /// </summary>
-    public static class Solution784
+    public static class Solution748
     {
         public static string ShortestCompletingWord(string licensePlate, string[] words) {
             int[] count = new int[26];

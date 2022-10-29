@@ -70,7 +70,7 @@ namespace LeetCodeNote
 
             var arr = new int[]{0,1,2,2};
 
-            var result = Solution934.ShortestBridge(grid);
+            var result = Solution784.LetterCasePermutation("a1b2");
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
