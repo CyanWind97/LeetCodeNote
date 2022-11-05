@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// no: 1106
     /// title: 解析布尔表达式
     /// problems: https://leetcode.cn/problems/parsing-a-boolean-expression/
-    /// date: 20221106
+    /// date: 20221105
     /// </summary> 
     public static class Solution1106
     {
