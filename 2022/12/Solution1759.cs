@@ -7,7 +7,7 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 1759
-    /// title: 放置盒子
+    /// title: 统计同构子字符串的数目
     /// problems: https://leetcode.cn/problems/count-number-of-homogenous-substrings/
     /// date: 20221226
     /// </summary>
