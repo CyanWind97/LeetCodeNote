@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// no: 1802
     /// title: 有界数组中指定下标处的最大值
     /// problems: https://leetcode.cn/problems/maximum-value-at-a-given-index-in-a-bounded-array/
-    /// date: 20230103
+    /// date: 20230104
     /// </summary>
     public static class Solution1802
     {
