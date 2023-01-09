@@ -17,7 +17,6 @@ namespace LeetCodeNote
         // 分段 + 数学
         public static int ReachNumber(int target) {
             target = Math.Abs(target);
-            int count = 0;
             int k = 0;
 
             while(target > 0){
