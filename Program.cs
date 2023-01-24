@@ -54,8 +54,10 @@ namespace LeetCodeNote
             };
 
             var grid = new int[][]{
-                new int[]{0,1},
-                new int[]{1,0},
+                new int[]{20,-21,14},
+                new int[]{-19,4,19},
+                new int[]{22,-47,24},
+                new int[]{-19,4,19}
             };
 
             var s = "[\"write\",\"their\",\"read\",\"quiet\",\"against\",\"down\",\"process\",\"check\"]";
@@ -70,7 +72,7 @@ namespace LeetCodeNote
 
             var arr = new int[]{0,1,2,2};
 
-            var result = Solution784.LetterCasePermutation("a1b2");
+            var result = Solution1632.MatrixRankTransform(grid);
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
