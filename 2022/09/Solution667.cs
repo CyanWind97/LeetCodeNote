@@ -1,6 +1,6 @@
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 667
     /// title: 优美的排列 II
     /// problems: https://leetcode.cn/problems/beautiful-arrangement-ii/

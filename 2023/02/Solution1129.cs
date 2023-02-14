@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1129
     /// title: 颜色交替的最短路径
     /// problems: https://leetcode.cn/problems/shortest-path-with-alternating-colors/

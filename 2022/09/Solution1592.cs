@@ -2,7 +2,7 @@ using System.Text;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1592
     /// title: 重新排列单词间的空格
     /// problems: https://leetcode.cn/problems/rearrange-spaces-between-words/

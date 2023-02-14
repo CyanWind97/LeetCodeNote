@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 2331
     /// title: 计算布尔二叉树的值
     /// problems: https://leetcode.cn/problems/evaluate-boolean-binary-tree/

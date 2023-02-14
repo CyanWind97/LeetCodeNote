@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1798
     /// title: 你能构造出连续值的最大数目
     /// problems: https://leetcode.cn/problems/maximum-number-of-consecutive-values-you-can-make/

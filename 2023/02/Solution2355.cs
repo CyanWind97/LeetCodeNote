@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 2355
     /// title: 装满杯子需要的最短总时长
     /// problems: https://leetcode.cn/problems/minimum-amount-of-time-to-fill-cups/

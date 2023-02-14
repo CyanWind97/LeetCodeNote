@@ -2,7 +2,7 @@ using System;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1608
     /// title: 特殊数组的特征值
     /// problems: https://leetcode.cn/problems/special-array-with-x-elements-greater-than-or-equal-x/

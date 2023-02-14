@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1619
     /// title: 删除某些元素后的数组均值
     /// problems: https://leetcode.cn/problems/mean-of-array-after-removing-some-elements/

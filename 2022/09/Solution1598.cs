@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1598
     /// title: 文件夹操作日志搜集器
     /// problems: https://leetcode.cn/problems/crawler-log-folder/

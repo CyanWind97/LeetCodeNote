@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace LeetCodeNote
 {
 
-    // <summary>
+    ///<summary>
     /// no: 1234
     /// title: 替换子串得到平衡字符串
     /// problems: https://leetcode.cn/problems/replace-the-substring-for-balanced-string/

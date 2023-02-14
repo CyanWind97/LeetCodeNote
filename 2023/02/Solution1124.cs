@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1124
     /// title: 表现良好的最长时间段
     /// problems: https://leetcode.cn/problems/longest-well-performing-interval/

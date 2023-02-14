@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1797
     /// title: 设计一个验证系统
     /// problems: https://leetcode.cn/problems/design-authentication-manager/

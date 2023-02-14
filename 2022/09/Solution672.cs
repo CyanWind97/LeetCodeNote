@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 672
     /// title: 灯泡开关 Ⅱ
     /// problems: https://leetcode.cn/problems/bulb-switcher-ii/

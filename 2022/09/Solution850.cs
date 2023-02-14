@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 850
     /// title: 矩形面积 II
     /// problems: https://leetcode.cn/problems/rectangle-area-ii/

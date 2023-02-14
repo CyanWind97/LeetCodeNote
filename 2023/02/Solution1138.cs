@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1138
     /// title: 字母板上的路径
     /// problems: https://leetcode.cn/problems/alphabet-board-path/

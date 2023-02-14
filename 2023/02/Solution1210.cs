@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1210
     /// title: 穿过迷宫的最少移动次数
     /// problems: https://leetcode.cn/problems/minimum-moves-to-reach-target-with-rotations/

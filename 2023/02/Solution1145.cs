@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1145
     /// title: 二叉树着色游戏
     /// problems: https://leetcode.cn/problems/binary-tree-coloring-game/

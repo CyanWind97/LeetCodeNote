@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1604
     /// title: 警告一小时内使用相同员工卡大于等于三次的人
     /// problems: https://leetcode.cn/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/

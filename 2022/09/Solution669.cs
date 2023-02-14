@@ -1,6 +1,6 @@
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 669
     /// title: 修剪二叉搜索树
     /// problems: https://leetcode.cn/problems/trim-a-binary-search-tree/

@@ -2,7 +2,7 @@ using System;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1624
     /// title: 两个相同字符之间的最长子字符串
     /// problems: https://leetcode.cn/problems/largest-substring-between-two-equal-characters/

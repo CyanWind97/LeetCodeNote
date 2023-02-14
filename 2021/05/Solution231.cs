@@ -1,6 +1,6 @@
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 231
     /// title: 2 的幂
     /// problems: https://leetcode-cn.com/problems/power-of-two/

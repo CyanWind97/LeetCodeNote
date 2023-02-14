@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    // <summary>
+    ///<summary>
     /// no: 1223
     /// title: 掷骰子模拟
     /// problems: https://leetcode.cn/problems/dice-roll-simulation/
