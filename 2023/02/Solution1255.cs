@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// no: 1255
     /// title: 得分最高的单词集合
     /// problems: https://leetcode.cn/problems/maximum-score-words-formed-by-letters/
-    /// date: 20230225
+    /// date: 20230226
     /// </summary>
     public static class Solution1255
     {
