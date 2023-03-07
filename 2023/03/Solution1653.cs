@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote
 {
-    ///<summary>
+    /// <summary>
     /// no: 1653
     /// title: 使字符串平衡的最少删除次数
     /// problems: https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/
