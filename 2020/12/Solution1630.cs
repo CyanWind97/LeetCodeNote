@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/arithmetic-subarrays/
     /// date: 20201225
     /// </summary>
-    public static class Solution1630
+    public static partial class Solution1630
     {
         public static IList<bool> CheckArithmeticSubarrays(int[] nums, int[] l, int[] r) {
             int m = l.Length;
