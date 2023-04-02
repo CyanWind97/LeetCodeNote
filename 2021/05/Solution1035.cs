@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/uncrossed-lines/
     /// date: 20210521
     /// </summary>
-    public static class Solution1053
+    public static class Solution1035
     {
         public static int MaxUncrossedLines(int[] nums1, int[] nums2) {
             int m = nums1.Length;
