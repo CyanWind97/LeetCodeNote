@@ -62,17 +62,41 @@ namespace LeetCodeNote
 
             var s = "[\"write\",\"their\",\"read\",\"quiet\",\"against\",\"down\",\"process\",\"check\"]";
 
-            // var nodeVals = new int[]{1};
-            // var nodes = nodeVals.Select(x => new Solution_lcof_29.Node(x)).ToArray();
+            var nodeVals = new int?[]{4,8,null,6,1,9,null,-5,4,null,null,null,-3,null,10};
+            var nodes = nodeVals.Select(x => x is not null ? new Solution1373.TreeNode(x.Value) : null).ToArray();
             // for(int i = 0; i < nodes.Length; i++){
-            //     nodes[i].next = nodes[(i + 1) % nodes.Length];
+            //     if(nodes[i] == null)
+            //         continue;
+                
+            //     nodes[i].left = nodes[(i + 1) % nodes.Length];
+            //     nodes[i].right = nodes
             // }
+            
+            var queue = new Queue<Solution1373.TreeNode>(nodes);
+            int i = 1;
+            queue.Enqueue(nodes[0]);
+            while(queue.Count > 0){
+                var node = queue.Dequeue();
+                if(node == null)
+                    continue;
+                
+                if(i < nodes.Length){
+                    node.left = nodes[i++];
+                    queue.Enqueue(node.left);
+                }
+
+                if(i < nodes.Length){
+                    node.right = nodes[i++];
+                    queue.Enqueue(node.right);
+                }
+            }
 
             // var logs = new string[] {"0:start:0","1:start:2","1:end:5","0:end:6"};
 
             var arr = new int[]{0,1,2,2};
 
-            var result = Solution1632.MatrixRankTransform(grid);
+            var solution = new  Solution1373.Solution();
+            var result = solution.MaxSumBST(nodes[0]);
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
