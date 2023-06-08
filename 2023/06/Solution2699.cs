@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// no: 2699
     /// title: 修改图中的边权
     /// problems: https://leetcode.cn/problems/modify-graph-edge-weights/
-    /// date: 20230604
+    /// date: 20230604 20230609
     /// </summary>
     public static class Solution2699
     {
