@@ -30,17 +30,17 @@ namespace LeetCodeNote
             int CalcCount(int[] degrees, IList<int>[] graphs){
                 var weight = new int[n];
                 var visted = new bool[n];
-                int CalcWeight(int next){
-                    if(visted[next])
-                        return weight[next];
+                int CalcWeight(int node){
+                    if(visted[node])
+                        return weight[node];
                     
-                    visted[next] = true;
-                    weight[next] = 1;
-                    foreach(var j in graphs[next]){
-                        weight[next] +=  2 * CalcWeight(j);
+                    visted[node] = true;
+                    weight[node] = 1;
+                    foreach(var next in graphs[node]){
+                        weight[node] +=  2 * CalcWeight(next);
                     }
 
-                    return weight[next];
+                    return weight[node];
                 }
 
                 int result = 0;
