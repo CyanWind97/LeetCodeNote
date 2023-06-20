@@ -95,8 +95,9 @@ namespace LeetCodeNote
             // var solution = new  Solution1373.Solution();
 
             var relationsStr = "[[2,1],[3,1],[1,4]]";
-            var relations = JsonSerializer.Deserialize<int[][]>(relationsStr);
-            var result = Solution1491.MinNumberOfSemesters(4, relations, 2);
+            strs = new string[]{".X.",".O.","XO."};
+            // var relations = JsonSerializer.Deserialize<int[][]>(relationsStr);
+            var result = Solution_lcp_41.FlipChess(strs);
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");
