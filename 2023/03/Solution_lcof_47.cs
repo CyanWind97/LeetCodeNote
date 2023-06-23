@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 namespace LeetCodeNote
 {
     /// <summary>
-    /// no: 1659
+    /// no: 47
     /// title: 礼物的最大价值
     /// problems: https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/
     /// date: 20230308
     /// type: 剑指Offer lcof
     /// </summary>
-    public static class Solution1659
+    public static class Solution_lcof_47
     {
         public static int MaxValue(int[][] grid) {
             int m = grid.Length;
