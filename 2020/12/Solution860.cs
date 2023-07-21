@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/lemonade-change/
     /// date: 20201210
     /// </summary>
-    public static class Solution860
+    public static partial class Solution860
     {
         public static bool LemonadeChange(int[] bills) {
             int count1 = 0;
