@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/summary-ranges/
     /// date: 20210110
     /// </summary>
-    public class Solution228
+    public partial class Solution228
     {
         public static IList<string> SummaryRanges(int[] nums) {
             int length = nums.Length;
