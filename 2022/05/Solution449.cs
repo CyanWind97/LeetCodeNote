@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/serialize-and-deserialize-bst/
     /// date: 20220511
     /// </summary>  
-    public static class Solution449
+    public static partial class Solution449
     {
         public class TreeNode {
             public int val;
