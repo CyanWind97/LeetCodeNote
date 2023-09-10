@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/course-schedule-iii/
     /// date: 20211214
     /// </summary>
-    public static class Solution630
+    public static partial class Solution630
     {
         public static int ScheduleCourse(int[][] courses) {
             Array.Sort(courses, (a, b) => a[1] - b[1]);
