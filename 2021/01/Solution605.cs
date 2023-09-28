@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/can-place-flowers/
     /// date: 20210101
     /// </summary>
-    public static class Solution605
+    public static partial class Solution605
     {
         public static bool CanPlaceFlowers(int[] flowerbed, int n) {
             int length = flowerbed.Length;
