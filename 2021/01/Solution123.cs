@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/
     /// date: 20210109
     /// </summary>
-    public static class Solution123
+    public static partial class Solution123
     {
         
         public static int MaxProfit(int[] prices) {
