@@ -7,7 +7,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
     /// date: 20201217
     /// </summary>
-    public static class Solution714
+    public static partial class Solution714
     {
         public static int MaxProfit(int[] prices, int fee) {
             int profit = 0;
