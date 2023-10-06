@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/online-stock-span/
     /// date: 20221021
     /// </summary>
-    public static class Solution901
+    public static partial class Solution901
     {
         public class StockSpanner {
 
