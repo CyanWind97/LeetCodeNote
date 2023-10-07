@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/stock-price-fluctuation/
     /// date: 20220123
     /// </summary>
-    public static class Solution2034
+    public static partial class Solution2034
     {
         public class StockPrice {
             Dictionary<int, int> time2price = new Dictionary<int, int>();
