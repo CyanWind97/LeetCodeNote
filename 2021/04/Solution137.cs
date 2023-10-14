@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/single-number-ii/
     /// date: 20210430
     /// </summary>
-    public static class Solution137
+    public static partial class Solution137
     {
         public static int SingleNumber(int[] nums) {
             Dictionary<int, int> dic = new Dictionary<int, int>();
