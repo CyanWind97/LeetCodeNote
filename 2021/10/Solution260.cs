@@ -7,7 +7,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/single-number-iii/
     /// date: 20211030
     /// </summary>
-    public static class Solution260
+    public static partial class Solution260
     {
         public static int[] SingleNumber(int[] nums) {
             int xorsum = 0;
