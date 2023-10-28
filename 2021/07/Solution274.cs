@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// date: 20210711
     /// </summary>
 
-    public static class Solution274
+    public static partial class Solution274
     {
         public static int HIndex(int[] citations) {
             int length = citations.Length;
