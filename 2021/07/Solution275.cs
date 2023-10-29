@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/h-index-ii/
     /// date: 20210712
     /// </summary>
-    public static class Solution275
+    public static partial class Solution275
     {
         public static int HIndex(int[] citations) {
             int length = citations.Length;
