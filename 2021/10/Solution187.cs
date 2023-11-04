@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// date: 20211008
     /// </summary>
 
-    public static class Solution187
+    public static partial class Solution187
     {
         public static IList<string> FindRepeatedDnaSequences(string s) {
             var result = new List<string>();
