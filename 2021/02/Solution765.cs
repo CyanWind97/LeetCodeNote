@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/couples-holding-hands/
     /// date: 20210214
     /// </summary>
-    public static class Solution765
+    public static partial class Solution765
     {
         public static int MinSwapsCouples(int[] row) {
             int n = row.Length / 2;
