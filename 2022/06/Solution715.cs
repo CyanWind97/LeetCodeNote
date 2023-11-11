@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/range-module/
     /// date: 20220620
     /// </summary>
-    public static class Solution715
+    public static partial class Solution715
     {
         public class RangeModule {
             
