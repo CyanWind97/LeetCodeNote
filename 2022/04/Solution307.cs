@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/range-sum-query-mutable/
     /// date: 20220404
     /// </summary>
-    public class Solution307
+    public static partial class Solution307
     {
         // Todo : 线段树
         // 参考解答 树状数组
