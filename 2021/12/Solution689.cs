@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/maximum-sum-of-3-non-overlapping-subarrays/
     /// date: 20211208
     /// </summary>
-    public static class Solution689
+    public static partial class Solution689
     {
         // 参考解答 前缀和
         public static int[] MaxSumOfThreeSubarrays(int[] nums, int k) {
