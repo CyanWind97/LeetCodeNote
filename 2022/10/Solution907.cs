@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/sum-of-subarray-minimums/
     /// date: 20221028
     /// </summary>    
-    public static class Solution907
+    public static partial class Solution907
     {
         public static int SumSubarrayMins(int[] arr) {
             int MOD = 1_000_000_007;
