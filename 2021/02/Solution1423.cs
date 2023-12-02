@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// date: 20210206
     /// </summary>
 
-    public static class Solution1423
+    public static partial class Solution1423
     {
         public static int MaxScore(int[] cardPoints, int k) {
             int length = cardPoints.Length;
