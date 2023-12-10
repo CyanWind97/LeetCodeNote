@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/path-with-minimum-effort/
     /// date: 20210129
     /// </summary>
-    public class Solution1631
+    public static partial class Solution1631
     {
         public static int MinimumEffortPath(int[][] heights) {
             int m = heights.Length;
