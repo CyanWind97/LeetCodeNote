@@ -7,7 +7,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/min-cost-climbing-stairs/
     /// date: 20201221
     /// </summary>
-    public static class Solution746
+    public static partial class Solution746
     {
         public static int MinCostClimbingStairs(int[] cost) {
             int length = cost.Length;
