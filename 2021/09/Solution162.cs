@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/find-peak-element/
     /// date: 20210915
     /// </summary>
-    public static class Solution162
+    public static partial class Solution162
     {
         public static int FindPeakElement(int[] nums) {
             int length = nums.Length;
