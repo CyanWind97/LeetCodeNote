@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/day-of-the-week/
     /// date: 20220103
     /// </summary>
-    public static class Solution1185
+    public static partial class Solution1185
     {
         public static string DayOfTheWeek(int day, int month, int year) {
             return (new DateTime(year, month, day)).DayOfWeek.ToString();
