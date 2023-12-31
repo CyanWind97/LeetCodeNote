@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/maximum-profit-of-operating-a-centennial-wheel/
     /// date: 20230305
     /// </summary>
-    public static class Solution1599
+    public static partial class Solution1599
     {
         public static int MinOperationsMaxProfit(int[] customers, int boardingCost, int runningCost) {
             if(4 * boardingCost <= runningCost)
