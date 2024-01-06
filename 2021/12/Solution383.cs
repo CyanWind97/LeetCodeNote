@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/relative-ranks/
     /// date: 20211204
     /// </summary>
-    public static class Solution383
+    public static partial class Solution383
     {
         public static bool CanConstruct(string ransomNote, string magazine) {
             var count = new int[26];
