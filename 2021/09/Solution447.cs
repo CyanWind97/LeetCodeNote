@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/number-of-boomerangs/
     /// date: 20210913
     /// </summary>
-    public static class Solution447
+    public static partial class Solution447
     {
         public static int NumberOfBoomerangs(int[][] points) {
             int length = points.Length;
