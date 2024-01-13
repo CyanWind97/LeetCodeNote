@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
     /// date: 20210326
     /// </summary>
-    public static class Solution83
+    public static partial class Solution83
     {
         public class ListNode {
             public int val;
