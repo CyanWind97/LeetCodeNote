@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/
     /// date: 20210325
     /// </summary>
-    public static class Solution82
+    public static partial class Solution82
     {
         
         public class ListNode {
