@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/maximum-swap/
     /// date: 20220913
     /// </summary>
-    public static class Solution670
+    public static partial class Solution670
     {
         public static int MaximumSwap(int num) {
             var chars = num.ToString().ToCharArray();
