@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// no: 670
     /// title: 最大交换
     /// problems: https://leetcode.cn/problems/maximum-swap/
-    /// date: 2024012222
+    /// date: 20240122
     /// </summary>
     public static partial class Solution670
     {
