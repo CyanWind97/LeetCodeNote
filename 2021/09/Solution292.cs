@@ -7,7 +7,7 @@ namespace LeetCodeNote
     /// date: 20210918
     /// </summary>
 
-    public static class Solution292
+    public static partial class Solution292
     {
         public static bool CanWinNim(int n) {
             return n % 4 != 0;
