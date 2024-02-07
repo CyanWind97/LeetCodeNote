@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/leaf-similar-trees/
     /// date: 20210510
     /// </summary>
-    public static class Solution993
+    public static partial class Solution993
     {
         public class TreeNode {
             public int val;
