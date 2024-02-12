@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/
     /// date: 20210731
     /// </summary>
-    public static class Solution987
+    public static partial class Solution987
     {
           public class TreeNode {
             public int val;
