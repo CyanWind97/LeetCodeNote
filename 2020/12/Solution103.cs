@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/
     /// date: 20201222
     /// </summary>
-    public static class Solution103
+    public static partial class Solution103
     {
         public class TreeNode {
             public int val;
