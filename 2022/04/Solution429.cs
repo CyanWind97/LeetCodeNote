@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/
     /// date: 20220408
     /// </summary>
-    public static class Solution429
+    public static partial class Solution429
     {
         public class Node {
             public int val;
@@ -63,7 +63,6 @@ namespace LeetCodeNote
             if(root == null)
                 return result;
 
-            
             var queue = new Queue<Node>();
             queue.Enqueue(root);
 
