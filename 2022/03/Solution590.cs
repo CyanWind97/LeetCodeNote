@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/
     /// date: 20220312
     /// </summary>
-    public static class Solution590
+    public static partial class Solution590
     {
         public class Node {
             public int val;
