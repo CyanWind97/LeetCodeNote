@@ -2,11 +2,11 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 938
-    /// title: 递增顺序搜索树
-    /// problems: https://leetcode-cn.com/problems/increasing-order-search-tree/
-    /// date: 20210425
+    /// title: 二叉搜索树的范围和
+    /// problems: https://leetcode.cn/problems/range-sum-of-bst/description
+    /// date: 20210427
     /// </summary>
-    public static class Solution938
+    public static partial class Solution938
     {
         public class TreeNode {
             public int val;
