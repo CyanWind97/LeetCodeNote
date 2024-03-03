@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/implement-queue-using-stacks/
     /// date: 20210305
     /// </summary>
-    public static class  Solution232
+    public static partial class  Solution232
     {
        public class MyQueue {
 
