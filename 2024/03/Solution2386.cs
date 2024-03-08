@@ -7,40 +7,42 @@ namespace LeetCodeNote;
 
 /// <summary>
 /// no: 2386
-/// title: 受限条件下可到达节点的数目
-/// problems: https://leetcode.cn/problems/reachable-nodes-with-restrictions/description/?envType=daily-question&envId=2024-03-02
-/// date: 20240302
+/// title: 找出数组的第 K 大和
+/// problems: https://leetcode.cn/problems/find-the-k-sum-of-an-array/description/?envType=daily-question&envId=2024-03-09
+/// date: 20240309
 /// </summary> 
 public static class Solution2386
-{
-    public static int ReachableNodes(int n, int[][] edges, int[] restricted) {
-        var result = 0;
-        var graph = Enumerable.Range(0, n).Select(_ => new List<int>()).ToArray();
-        var visited = new bool[n];
-        foreach (var edge in edges){
-            graph[edge[0]].Add(edge[1]);
-            graph[edge[1]].Add(edge[0]);
+{   
+    // 参考解答
+    public static long KSum(int[] nums, int k) {
+        var length = nums.Length;
+        var total = 0L;
+
+        for (var i = 0; i < length; i++){
+            if (nums[i] >= 0) 
+                total += nums[i];
+            else
+                nums[i] = -nums[i];
         }
 
-        foreach (var node in restricted){
-            visited[node] = true;
-        }
+        Array.Sort(nums);
 
-        var queue = new Queue<int>();
-        queue.Enqueue(0);
+        var result = 0L;
+        var pq = new PriorityQueue<(long Sum, int Index), long>();
+        pq.Enqueue((nums[0], 0), nums[0]);
 
-        while (queue.Count > 0){
-            var current = queue.Dequeue();
-            if (visited[current])
+        for(int j = 2; j <= k; j++){
+            var (sum, index) = pq.Dequeue();
+            result = sum;
+            if (index == length - 1)
                 continue;
             
-            visited[current] = true;
-            result++;
-            foreach (var neighbor in graph[current].Where(neighbor => !visited[neighbor])){
-                queue.Enqueue(neighbor);
-            }
+            var sum1 = sum + nums[index + 1];
+            var sum2 = sum - nums[index] + nums[index + 1];
+            pq.Enqueue((sum1, index + 1), sum1);
+            pq.Enqueue((sum2, index + 1), sum2);
         }
 
-        return result;
+        return total - result;
     }
 }
