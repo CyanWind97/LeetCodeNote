@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/bulls-and-cows/
     /// date: 20211108
     /// </summary>
-    public static class Solution299
+    public static partial class Solution299
     {
         public static string GetHint(string secret, string guess) {
             int aCount = 0;
