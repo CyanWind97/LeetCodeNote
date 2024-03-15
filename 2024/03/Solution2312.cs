@@ -9,6 +9,7 @@ namespace LeetCodeNote;
 /// no: 2312
 /// title:  卖木头块
 /// problems: https://leetcode.cn/problems/selling-pieces-of-wood
+/// date: 20240315
 /// </summary>
 public static class Solution2312
 {   
