@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/minimum-height-trees/
     /// date: 20220406
     /// </summary>
-    public static class Solution310
+    public static partial class Solution310
     {
         // 参考解答 广度优先
         public static IList<int> FindMinHeightTrees(int n, int[][] edges) {
