@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/range-sum-query-immutable/
     /// date: 20210301
     /// </summary>
-    public static class Solution303
+    public static partial class Solution303
     {
         public class NumArray {
 
