@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/coin-change-2/
     /// date: 20210610
     /// </summary>
-    public static class Solution518
+    public static partial class Solution518
     {
         public static int Change(int amount, int[] coins) {
             int length = coins.Length;
