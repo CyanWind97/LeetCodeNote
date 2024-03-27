@@ -11,9 +11,9 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/maximum-xor-of-two-numbers-in-an-array/description/?envType=daily-question&envId=2023-11-04
     /// date: 20231104
     /// </summary>
-    public static class Solution421
+    public static partial class Solution421
     {
-        public static int FindMaximumXOR(int[] nums) {
+        public static int FindMaximumXOR_1(int[] nums) {
             const int highBit = 30;
 
             int length = nums.Length;

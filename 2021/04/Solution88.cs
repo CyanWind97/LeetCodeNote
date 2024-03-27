@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/merge-sorted-array/
     /// date: 20210405
     /// </summary>
-    public static class Solution88
+    public static partial class Solution88
     {
         public static void Merge(int[] nums1, int m, int[] nums2, int n) {
             int[] tmp = nums1.Take(m).ToArray();

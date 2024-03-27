@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array/
     /// date: 20210516
     /// </summary>
-    public class Solution421
+    public static partial class Solution421
     {
         // 参考解答 hashSet
         // x = ai ^ aj =>  aj = x ^ ai

@@ -95,9 +95,9 @@ namespace LeetCodeNote
             // var solution = new  Solution1373.Solution();
 
             var relationsStr = "[[2,1],[3,1],[1,4]]";
-            strs = new string[]{".X.",".O.","XO."};
+            int[] visited = [0,0];
             // var relations = JsonSerializer.Deserialize<int[][]>(relationsStr);
-            var result = Solution_lcp_41.FlipChess(strs);
+            var result = Solution1997.FirstDayBeenInAllRooms(visited);
             Console.WriteLine(result);
 
             Console.WriteLine("Hello World!");

@@ -11,9 +11,9 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/?envType=daily-question&envId=2023-10-04
     /// date: 20231004
     /// </summary>
-    public static class Solution188
+    public static partial class Solution188
     {
-        public static int MaxProfit(int k, int[] prices) {
+        public static int MaxProfit_3(int k, int[] prices) {
             int length = prices.Length;
             if (length <= 1 || k == 0) 
                 return 0;

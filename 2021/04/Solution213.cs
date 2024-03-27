@@ -7,7 +7,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/house-robber-ii/
     /// date: 20210415
     /// </summary>
-    public static class Solution213
+    public static partial class Solution213
     {
 
         // 参考解答

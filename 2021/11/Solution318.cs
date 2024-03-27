@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/maximum-product-of-word-lengths/
     /// date: 20211117
     /// </summary>
-    public static class Solution318
+    public static partial class Solution318
     {
         public static int MaxProduct(string[] words) {
             int GetKey(string word){

@@ -11,9 +11,9 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/maximum-product-of-word-lengths/description/?envType=daily-question&envId=2023-11-06
     /// date: 20231106
     /// </summary>
-    public static class Solution318
+    public static partial class Solution318
     {
-        public static int MaxProduct(string[] words) {
+        public static int MaxProduct_1(string[] words) {
             int GetKey(string word){
                 int key = 0;
                 foreach(var c in word){
