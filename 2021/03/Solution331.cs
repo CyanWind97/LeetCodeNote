@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/verify-preorder-serialization-of-a-binary-tree/
     /// date: 20210312
     /// </summary>
-    public static class Solution331
+    public static partial class Solution331
     {
         public static bool IsValidSerialization(string preorder) {
             int slots = 1;
