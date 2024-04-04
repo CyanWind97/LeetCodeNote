@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/maximum-difference-between-node-and-ancestor/
     /// date: 20230418
     /// </summary>
-    public static class Solution1026
+    public static partial class Solution1026
     {
         public class TreeNode {
             public int val;
