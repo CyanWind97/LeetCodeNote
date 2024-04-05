@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/kth-ancestor-of-a-tree-node/
     /// date: 20230612
     /// </summary>
-    public static class Solution1483
+    public static partial class Solution1483
     {
         // 参考解答
         // 倍增
