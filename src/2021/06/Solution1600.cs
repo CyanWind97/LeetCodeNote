@@ -8,52 +8,48 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/throne-inheritance/
     /// date: 20210620
     /// </summary>
-    public static class Solution1600
+    public static partial class Solution1600
     {
         // 参考解答 多叉树
         public class ThroneInheritance {
-            Dictionary<string, IList<string>> edges;
-            ISet<string> dead;
-            string king;
+            readonly Dictionary<string, IList<string>> _edges = [];
+            readonly HashSet<string> _dead = [];
+            readonly string _king;
 
             public ThroneInheritance(string kingName) {
-                edges = new Dictionary<string, IList<string>>();
-                dead = new HashSet<string>();
-                king = kingName;
+                _king = kingName;
             }
             
             public void Birth(string parentName, string childName) {
-                IList<string> children;
-                if (edges.TryGetValue(parentName, out children)) {
+                if (_edges.TryGetValue(parentName, out var children))
                     children.Add(childName);
-                    edges[parentName] = children;
-                } else {
-                    children = new List<string>();
-                    children.Add(childName);
-                    edges.Add(parentName, children);
-                }
+                else 
+                    _edges[parentName] = [childName];
             }
             
             public void Death(string name) {
-                dead.Add(name);
+                _dead.Add(name);
             }
             
             public IList<string> GetInheritanceOrder() {
-                IList<string> ans = new List<string>();
-                Preorder(ans, king);
-                return ans;
-            }
+                var reulst = new List<string>();
 
-            private void Preorder(IList<string> ans, string name) {
-                if (!dead.Contains(name)) {
-                    ans.Add(name);
+                void Preorder(string name) {
+                    if (!_dead.Contains(name)) 
+                        reulst.Add(name);
+                    
+                    if (!_edges.TryGetValue(name, out var children)) 
+                        return;
+                    
+                    foreach (string childName in children) {
+                        Preorder(childName);
+                    }
                 }
-                IList<string> children = edges.TryGetValue(name, out children) ? children : new List<string>();
-                foreach (string childName in children) {
-                    Preorder(ans, childName);
-                }
-            }
 
+                Preorder(_king);
+
+                return reulst;
+            }
         }
     }
 }
