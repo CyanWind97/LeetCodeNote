@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// date: 20210313
     /// </summary>
 
-    public static class Solution705
+    public static partial class Solution705
     {
         public class MyHashSet {
 
