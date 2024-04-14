@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/design-hashmap/
     /// date: 20210314
     /// </summary>
-    public static class Solution706
+    public static partial class Solution706
     {
         public class MyHashMap {
 
