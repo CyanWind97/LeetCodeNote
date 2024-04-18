@@ -11,7 +11,7 @@ namespace LeetCodeNote;
 /// problems: https://leetcode-cn.com/problems/design-hashset/
 /// date: 20240414
 /// </summary>
-public static partial class Solutioon705
+public static partial class Solution705
 {
     
 }
