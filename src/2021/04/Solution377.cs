@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/combination-sum-iv/
     /// date: 20210424
     /// </summary>
-    public static class Solution377
+    public static partial class Solution377
     {
         
         public static int CombinationSum4(int[] nums, int target) {
