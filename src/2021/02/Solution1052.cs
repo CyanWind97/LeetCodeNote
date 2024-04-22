@@ -9,15 +9,15 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/grumpy-bookstore-owner/
     /// date: 20210223
     /// </summary>
-    public static class Solution1052
+    public static partial class Solution1052
     {
-        public static int MaxSatisfied(int[] customers, int[] grumpy, int X) {
+        public static int MaxSatisfied(int[] customers, int[] grumpy, int minutes) {
             int length = customers.Length;
             int max = 0;
             int sum = 0;
             int cur = 0;
             
-            for(int i = 0; i < X; i++){
+            for(int i = 0; i < minutes; i++){
                 if(grumpy[i] == 1)
                     cur += customers[i];
                 else
@@ -26,9 +26,9 @@ namespace LeetCodeNote
 
             max = cur;
 
-            for(int i = X; i < length; i++){
-                if(grumpy[i - X] == 1)
-                    cur -= customers[i - X];
+            for(int i = minutes; i < length; i++){
+                if(grumpy[i - minutes] == 1)
+                    cur -= customers[i - minutes];
                 
                 if(grumpy[i] == 1)
                     cur += customers[i];
