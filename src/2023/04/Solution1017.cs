@@ -12,23 +12,8 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/convert-to-base-2/
     /// date: 20230406
     /// </summary>
-    public static class Solution1017
+    public static partial class Solution1017
     {
-        public static string BaseNeg2(int n) {
-            if(n == 0 || n == 1)
-                return n.ToString();
-
-            var sb = new StringBuilder();
-            while(n != 0) {
-                int remainder = n & 1;
-                sb.Append(remainder);
-                n -= remainder; 
-                n /= -2;
-            }
-            
-            var s = sb.ToString();
-
-            return new string(s.Reverse().ToArray());
-        }
+        
     }
 }
