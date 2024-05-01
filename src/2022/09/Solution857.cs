@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/minimum-cost-to-hire-k-workers/
     /// date: 20220911
     /// </summary>
-    public static class Solution857
+    public static partial class Solution857
     {
         // 参考解答
         // 贪心 + 优先队列
