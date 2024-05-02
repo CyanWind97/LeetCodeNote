@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/parallel-courses-ii/
     /// date: 20230616
     /// </summary>
-    public static class Solution1491
+    public static class Solution1494
     {
         public static int MinNumberOfSemesters(int n, int[][] relations, int k) {
             var inDegrees = new int[n];

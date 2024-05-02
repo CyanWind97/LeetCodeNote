@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote;
 
- ///<summary>
+///<summary>
 /// no: 857
 /// title: 雇佣 K 名工人的最低成本
 /// problems: https://leetcode.cn/problems/minimum-cost-to-hire-k-workers/
