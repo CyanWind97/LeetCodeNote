@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/maximum-profit-in-job-scheduling/
     /// date: 20221022
     /// </summary>
-    public static class Solution1235
+    public static partial class Solution1235
     {
         public static int JobScheduling(int[] startTime, int[] endTime, int[] profit) {
             int length = startTime.Length;
