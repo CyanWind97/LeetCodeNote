@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/defuse-the-bomb/
     /// date: 20220924
     /// </summary>
-    public static class Solution1652
+    public static partial class Solution1652
     {
         public static int[] Decrypt(int[] code, int k) {
             int n = code.Length;
