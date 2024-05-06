@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/cherry-pickup/
     /// date: 20220710
     /// </summary>
-    public static class Solution741
+    public static partial class Solution741
     {
         // 参考解答 dp
         public static int CherryPickup(int[][] grid) {
