@@ -34,8 +34,9 @@ public static partial class Solution1463
                     for (int dj1 = j1 - 1; dj1 <= j1 + 1; dj1++) {
                         for (int dj2 = j2 - 1; dj2 <= j2 + 1; dj2++) {
                             if (dj1 >= 0 && dj1 < n 
-                            && dj2 >= 0 && dj2 < n) 
-                                best = Math.Max(best, f[dj1, dj2]);
+                            && dj2 >= 0 && dj2 < n
+                            && f[dj1,dj2] != -1) 
+                                best = Math.Max(best, f[dj1, dj2] + (j1 == j2 ? grid[i][j1] : grid[i][j1] + grid[i][j2]));
                         }
                     }
                     g[j1, j2] = best;
