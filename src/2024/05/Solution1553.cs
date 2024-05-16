@@ -11,7 +11,7 @@ namespace LeetCodeNote;
 /// problems: https://leetcode.cn/problems/minimum-number-of-days-to-eat-n-oranges
 /// date: 20240512
 /// </summary>
-public static class Solutiion1553
+public static class Solution1553
 {
     public static int MinDays(int n) {
         var  memo = new Dictionary<int, int>();
