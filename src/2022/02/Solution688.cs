@@ -1,4 +1,4 @@
-namespace LeetCodeNote1
+namespace LeetCodeNote
 {
     /// <summary>
     /// no: 688
