@@ -21,7 +21,6 @@ public static class Solution1542
         int mask = 0;
         for (int i = 0; i < length; i++){
             int num = s[i] - '0';
-            prefix[num] = i;
             mask ^= 1 << num;
             if (prefix.TryGetValue(mask, out int value))
                 result = Math.Max(result, i - value);
