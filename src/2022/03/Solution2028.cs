@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// date: 20220327
     /// </summary>
 
-    public static class Solution2028
+    public static partial class Solution2028
     {
         public static int[] MissingRolls(int[] rolls, int mean, int n) {
             int m = rolls.Length;
@@ -17,7 +17,7 @@ namespace LeetCodeNote
             sum -= rolls.Sum();
             
             if(sum < n || sum > 6 * n)
-                return new int[]{};
+                return [];
 
             int quotient = sum / n;
             int remainder = sum % n;
