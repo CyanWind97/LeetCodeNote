@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/distribute-candies/
     /// date: 20211101
     /// </summary>
-    public static class Solution575
+    public static partial class Solution575
     {
         public static int DistributeCandies(int[] candyType) {
 
