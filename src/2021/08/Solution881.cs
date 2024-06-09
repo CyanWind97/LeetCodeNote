@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/boats-to-save-people/
     /// date: 20210826
     /// </summary>
-    public static class Solution881
+    public static partial class Solution881
     {
         public static int NumRescueBoats(int[] people, int limit) {
             Array.Sort(people);
