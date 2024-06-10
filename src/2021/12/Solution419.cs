@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/battleships-in-a-board/
     /// date: 20211218
     /// </summary>
-    public static class Solution419
+    public static partial class Solution419
     {
         public static int CountBattleships(char[][] board) {
             int m = board.Length;
