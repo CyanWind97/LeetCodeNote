@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/longest-uncommon-subsequence-ii/
     /// date: 20220627
     /// </summary>
-    public static class Solution522
+    public static partial class Solution522
     {
         public static int FindLUSlength(string[] strs) {
             bool IsSubseq(string s, string t){
