@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/next-greater-element-ii/
     /// date: 20210306
     /// </summary>
-    public static class Solution503
+    public static partial class Solution503
     {
         public static int[] NextGreaterElements(int[] nums) {
             int length = nums.Length;
@@ -54,7 +54,7 @@ namespace LeetCodeNote
         public static int[] NextGreaterElements_1(int[] nums) {
             int length = nums.Length;
             if(length == 0)
-                return new int[]{};
+                return [];
             
             int[] result = new int[length];
             Array.Fill(result, -1);
