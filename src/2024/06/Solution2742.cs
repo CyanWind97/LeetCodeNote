@@ -9,7 +9,7 @@ namespace LeetCodeNote;
 /// no: 2742
 /// title: 给墙壁刷油漆
 /// problems: https://leetcode.cn/problems/painting-the-walls
-/// date: 20240627
+/// date: 20240628
 /// </summary>
 public static class Solution2742
 {
