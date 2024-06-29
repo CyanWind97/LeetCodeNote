@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/target-sum/
     /// date: 20210607
     /// </summary>
-    public static class Solution494
+    public static partial class Solution494
     {
         public static int FindTargetSumWays(int[] nums, int target) {
             int length = nums.Length;
