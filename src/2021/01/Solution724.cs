@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/find-pivot-index/
     /// date: 20210128
     /// </summary>
-    public static class Solution724
+    public static partial class Solution724
     {
         public static int PivotIndex(int[] nums) {
             int length = nums.Length;
