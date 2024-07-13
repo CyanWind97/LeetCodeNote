@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/max-increase-to-keep-city-skyline/
     /// date: 20211213
     /// </summary>
-    public static  class Solution807
+    public static partial class Solution807
     {
         public static int MaxIncreaseKeepingSkyline(int[][] grid) {
             int m = grid.Length;
