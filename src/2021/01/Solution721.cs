@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/accounts-merge/
     /// date: 20210118
     /// </summary>
-    public static class Solution721
+    public static partial class Solution721
     {
         public static IList<IList<string>> AccountsMerge(IList<IList<string>> accounts) {
             int length = accounts.Count;
