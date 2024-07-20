@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/
     /// date: 20230627
     /// </summary>
-    public static class Solution1186
+    public static partial class Solution1186
     {
         public static int MaximumSum(int[] arr) {
             int length = arr.Length;
