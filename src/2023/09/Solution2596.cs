@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/check-knight-tour-configuration/?envType=daily-question&envId=2023-09-13
     /// date: 20230913
     /// </summary>
-    public static class Solution2596
+    public static partial class Solution2596
     {
         public static bool CheckValidGrid(int[][] grid) {
             int n = grid.Length;
