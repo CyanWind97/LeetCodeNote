@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/falling-squares/
     /// date: 20220526
     /// </summary>
-    public static class Solution699
+    public static partial class Solution699
     {
         // 参考解答
         public static IList<int> FallingSquares(int[][] positions) {
