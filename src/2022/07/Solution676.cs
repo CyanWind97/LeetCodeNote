@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/implement-magic-dictionary/
     /// date: 20220711
     /// </summary>
-    public static  class Solution676
+    public static partial class Solution676
     {
         public class MagicDictionary {
             private Trie _trie;
