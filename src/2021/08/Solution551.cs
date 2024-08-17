@@ -6,30 +6,8 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/student-attendance-record-i/
     /// date: 20210817
     /// </summary>
-    public static class Solution551
+    public static partial class Solution551
     {
 
-        public static bool CheckRecord(string s) {
-            int ACount = 0;
-            int LCount = 0;
-            foreach(var c in s){
-                if(c == 'L'){
-                    LCount++;
-                    if(LCount >= 3)
-                        return false;
-                }else{
-                    LCount = 0;
-
-                    if(c == 'A'){
-                        ACount++;
-
-                        if(ACount >= 2)
-                            return false;
-                    }
-                }
-            }
-
-            return true;
-        }
     }
 }
