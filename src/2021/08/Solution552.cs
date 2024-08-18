@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/student-attendance-record-ii/
     /// date: 20210818
     /// </summary>
-    public static class Solution552
+    public static partial class Solution552
     {
         public static int CheckRecord(int n) {
             const int mod = 1000000007;
