@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/
     /// date: 20220920
     /// </summary>
-    public static class Solution698
+    public static partial class Solution698
     {
         // 参考解答
         // 状态压缩 + 动态规划
