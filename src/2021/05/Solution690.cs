@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/employee-importance/
     /// date: 20210501
     /// </summary>
-    public static class Solution690
+    public static partial class Solution690
     {
         public class Employee {
             public int id;
