@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/maximize-the-confusion-of-an-exam/
     /// date: 20220329
     /// </summary>
-    public static class Solution2024
+    public static partial class Solution2024
     {
         // 参考解答 滑动窗口
         public static int MaxConsecutiveAnswers(string answerKey, int k) {
@@ -35,7 +35,7 @@ namespace LeetCodeNote
             return Math.Max(MaxConsecutiveChar('T'), MaxConsecutiveChar('F'));
         }
 
-        // 参考解答 二分查找 + 浅醉和
+        // 参考解答 二分查找 + 前缀和
         public static int MaxConsecutiveAnswers_1(string answerKey, int k) {
             var length = answerKey.Length;
             var result = 0;
