@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace LeetCodeNote;
 
 /// <summary>
-/// no: 2860
+/// no: 3174
 /// title:  清除数字
 /// problems: https://leetcode.cn/problems/clear-digits
 /// date: 20240905
@@ -23,7 +23,7 @@ public static class Solution3174
             {
                 if (write > 0)
                     write--;
-                
+
                 continue;
             }
             
