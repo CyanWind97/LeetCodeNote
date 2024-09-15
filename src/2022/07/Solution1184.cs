@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/distance-between-bus-stops/
     /// date: 20220724
     /// </summary>
-    public static class Solution1184
+    public static partial class Solution1184
     {
         public static int DistanceBetweenBusStops(int[] distance, int start, int destination) {
             int n = distance.Length;
