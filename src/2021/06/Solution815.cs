@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/bus-routes/
     /// date: 20210628
     /// </summary>
-    public static class Solution815
+    public static partial class Solution815
     {
         // 参考解答 优化建图 + 广度优先搜索
         public static int NumBusesToDestination(int[][] routes, int source, int target) {
