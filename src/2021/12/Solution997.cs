@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/find-the-town-judge/
     /// date: 20211219
     /// </summary>
-    public static class Solution997
+    public static partial class Solution997
     {
         /// <summary>
         /// 参考解答 入度 出度
