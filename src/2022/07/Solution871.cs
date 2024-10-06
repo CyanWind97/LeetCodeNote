@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/minimum-number-of-refueling-stops/
     /// date: 20220702
     /// </summary>
-    public static class Solution871
+    public static partial class Solution871
     {
         // 参考解答 dp
         public static int MinRefuelStops(int target, int startFuel, int[][] stations) {
