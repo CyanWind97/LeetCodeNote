@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// date: 20211001
     /// </summary>
 
-    public static class Solution1436
+    public static partial class Solution1436
     {
         public static string DestCity(IList<IList<string>> paths) {
             var cities = new HashSet<string>();
