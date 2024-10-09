@@ -9,7 +9,7 @@ namespace LeetCodeNote;
 /// <summary>
 /// no: 3171
 /// title: 到按位或最接近 K 的子数组
-/// problems: https://leetcode.cn/problems/find-subarray-with-bitwise-or-closest-to-k/description/?envType=daily-question&envId=2024-10-09
+/// problems: https://leetcode.cn/problems/find-subarray-with-bitwise-or-closest-to-k
 /// date: 20241009
 /// </summary>
 public static class Solutin3171
