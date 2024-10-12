@@ -9,7 +9,7 @@ namespace LeetCodeNote;
 /// no: 3158
 /// title: 求出出现两次数字的 XOR 值
 /// problems: https://leetcode.cn/problems/find-the-xor-of-numbers-which-appear-twice
-/// date: 20241011
+/// date: 20241012
 /// </summary>
 public static class Solution3158
 {
