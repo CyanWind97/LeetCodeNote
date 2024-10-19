@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/smallest-range-i/
     /// date: 20220430
     /// </summary>
-    public static class Solution908
+    public static partial class Solution908
     {
         public static int SmallestRangeI(int[] nums, int k) {
             int length = nums.Length;
