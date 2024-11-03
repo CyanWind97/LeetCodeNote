@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeNote;
 
- /// <summary>
+/// <summary>
 /// no: 638
 /// title: 大礼包
 /// problems: https://leetcode-cn.com/problems/shopping-offers/

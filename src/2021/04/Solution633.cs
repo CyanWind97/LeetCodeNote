@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/sum-of-square-numbers/
     /// date: 20210428
     /// </summary>
-    public static class Solution633
+    public static partial class Solution633
     {
         public static bool JudgeSquareSum(int c) {
 
