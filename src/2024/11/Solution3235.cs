@@ -7,9 +7,9 @@ namespace LeetCodeNote;
 
 /// <summary>
 /// no: 3255
-/// title: 长度为 K 的子数组的能量值 II
-/// problems: https://leetcode.cn/problems/find-the-power-of-k-size-subarrays-ii
-/// date: 20241107
+/// title: 判断矩形的两个角落是否可达
+/// problems: https://leetcode.cn/problems/check-if-the-rectangle-corner-is-reachable
+/// date: 20241108
 /// </summary>
 public static class Solution3235
 {
