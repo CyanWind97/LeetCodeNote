@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/single-element-in-a-sorted-array/
     /// date: 20220214
     /// </summary>
-    public static class Solution540
+    public static partial class Solution540
     {
         public static int SingleNonDuplicate(int[] nums) {
             int left = 0;
