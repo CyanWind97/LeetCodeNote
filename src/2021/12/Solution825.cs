@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/friends-of-appropriate-ages/
     /// date: 20211227
     /// </summary>
-    public static class Solution825
+    public static partial class Solution825
     {
         public static int NumFriendRequests(int[] ages) {
             var dic = ages.GroupBy(x => x)
