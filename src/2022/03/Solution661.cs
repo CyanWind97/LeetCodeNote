@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/image-smoother/
     /// date: 20220324
     /// </summary>
-    public static class Solution661
+    public static partial class Solution661
     {
         public static int[][] ImageSmoother(int[][] img) {
             int m = img.Length;
