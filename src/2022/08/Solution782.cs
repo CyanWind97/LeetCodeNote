@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/transform-to-chessboard/
     /// date: 20220823
     /// </summary>
-    public static class Solution782
+    public static partial class Solution782
     {
         // 参考解答
         public static int MovesToChessboard(int[][] board) {
