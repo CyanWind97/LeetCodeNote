@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/determine-color-of-a-chessboard-square/
     /// date: 20221208
     /// </summary>
-    public static class Solution1812
+    public static partial class Solution1812
     {
         public static bool SquareIsWhite(string coordinates) {
             return (coordinates[0] - 'a' + coordinates[1] - '1') % 2 != 0;
