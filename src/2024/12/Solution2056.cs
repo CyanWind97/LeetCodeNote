@@ -9,7 +9,7 @@ namespace LeetCodeNote;
 /// no: 2056
 /// title: 棋盘上有效移动组合的数目
 /// problems: https://leetcode.cn/problems/number-of-valid-move-combinations-on-chessboard
-/// date: 20241205
+/// date: 20241204
 /// </summary>
 
 public static class Solution2056
