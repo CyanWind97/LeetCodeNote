@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/exam-room/
     /// date: 20221230
     /// </summary>
-    public static class Solution855
+    public static partial class Solution855
     {
         // 参考解答
         // 有序集合
