@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/maximum-number-of-eaten-apples/
     /// date: 20211224
     /// </summary>
-    public static class Solution1705
+    public static partial class Solution1705
     {
         public static int EatenApples(int[] apples, int[] days) {
             var list = new List<(int Day, int Apples)>();
