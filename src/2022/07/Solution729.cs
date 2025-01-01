@@ -9,23 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/my-calendar-i/
     /// date: 20220705
     /// </summary>
-    public static class Solution729
+    public static partial class Solution729
     {
-        public class MyCalendar {
-            
-            private List<(int Start, int End)> _booked;
-
-            public MyCalendar() {
-                _booked = new();
-            }
-            
-            public bool Book(int start, int end) {
-                if(_booked.Any(b => b.Start < end && start < b.End))
-                    return false;
-                
-                _booked.Add((start, end));
-                return true;
-            }
-        }
     }
 }
