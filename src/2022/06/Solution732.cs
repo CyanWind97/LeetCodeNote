@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/my-calendar-iii/
     /// date: 20220606
     /// </summary>
-    public static class Solution732
+    public static partial class Solution732
     {
         // 参考解答 线段树
         public class MyCalendarThree {
