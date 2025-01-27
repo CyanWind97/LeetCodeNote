@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/pascals-triangle-ii/
     /// date: 20210212
     /// </summary>
-    public static class Solution119
+    public static partial class Solution119
     {
         public static IList<int> GetRow(int rowIndex) {
             int[] result = new int[rowIndex + 1];
