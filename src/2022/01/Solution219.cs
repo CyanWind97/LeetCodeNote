@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// date: 20220119
     /// </summary>
 
-    public static class Solution219
+    public static partial class Solution219
     {
         public static bool ContainsNearbyDuplicate(int[] nums, int k) {
             if(k == 0)
