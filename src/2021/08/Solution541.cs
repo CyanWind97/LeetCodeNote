@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// date: 20210820
     /// </summary>
 
-    public static class Solution541
+    public static partial class Solution541
     {
         public static string ReverseStr(string s, int k) {
             char[] chars = s.ToCharArray();
