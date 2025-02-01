@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/range-addition-ii/
     /// date: 20211107
     /// </summary>
-    public static class Solution598
+    public static partial class Solution598
     {
         public static int MaxCount(int m, int n, int[][] ops) {
             int minM = m;
