@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/spiral-matrix-ii/
     /// date: 20210316
     /// </summary>
-    public static class Solution59
+    public static partial class Solution59
     {
         public static int[][] GenerateMatrix(int n) {
             int[][] matrix = new int[n][];
