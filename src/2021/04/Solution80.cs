@@ -6,9 +6,9 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/
     /// date: 20210406
     /// </summary>
-    public static class Solution80
+    public static partial class Solution80
     {
-        public static int RemoveDuplicates(int[] nums) {
+        public static int RemoveDuplicates_1(int[] nums) {
             int length = nums.Length;
             if(length == 1)
                 return  1;
@@ -40,24 +40,5 @@ namespace LeetCodeNote
             return i;
         }
 
-        // 参考解答 双指针
-        public static int RemoveDuplicates_1(int[] nums) {
-            int length = nums.Length;
-            if(length <= 2)
-                return  2;
-            
-            int slow = 2, fast = 2;
-            while(fast < length)
-            {
-                while(nums[slow - 2] != nums[fast]){
-                    nums[slow] = nums[fast];
-                    slow++;
-                }
-
-                fast++;
-            }
-
-            return slow;
-        }
     }
 }
