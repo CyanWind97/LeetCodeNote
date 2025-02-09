@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/cat-and-mouse/
     /// date: 20220104
     /// </summary>
-    public static class Solution913
+    public static partial class Solution913
     {
         // 参考解答
         // 20220510 测试用例更新 已有不能通过 并且超时
