@@ -12,7 +12,7 @@ namespace LeetCodeNote
     /// date: 20220510
     /// </summary>
     
-    public static class Solution1728
+    public static partial class Solution1728
     {
         // 参考解答 拓扑排序
         public static bool CanMouseWin(string[] grid, int catJump, int mouseJump) {
