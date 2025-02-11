@@ -11,7 +11,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/
     /// date: 20221220
     /// </summary>
-    public static class Solution1760
+    public static partial class Solution1760
     {   
         // 参考解答
         // 二分查找
