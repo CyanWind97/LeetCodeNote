@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 namespace LeetCodeNote
 {
     /// <summary>
-    /// no: 878
-    /// title: 第 N 个神奇数字
+    /// no: 1742
+    /// title: 盒子中小球的最大数量
     /// problems: https://leetcode.cn/problems/nth-magical-number/
     /// date: 20221123
     /// </summary>
-    public static class Solution1742
+    public static partial class Solution1742
     {
         public static int CountBalls(int lowLimit, int highLimit) {
             var count = new Dictionary<int, int>();
