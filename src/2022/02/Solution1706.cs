@@ -6,7 +6,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/where-will-the-ball-fall/
     /// date: 20220224
     /// </summary>
-    public static class Solution1706
+    public static partial class Solution1706
     {
         public static int[] FindBall(int[][] grid) {
             int m =  grid.Length;
