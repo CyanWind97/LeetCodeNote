@@ -8,7 +8,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode.cn/problems/design-skiplist/
     /// date: 20220726
     /// </summary>
-    public static class Solution1206
+    public static partial class Solution1206
     {
         // 参考解答
         public class Skiplist {
