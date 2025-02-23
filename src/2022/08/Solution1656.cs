@@ -10,7 +10,7 @@ namespace LeetCodeNote
     /// date: 20220816
     /// </summary>
 
-    public static class Solution1656
+    public static partial class Solution1656
     {
         public class OrderedStream {
             private int _ptr;
