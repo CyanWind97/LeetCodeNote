@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/palindrome-partitioning/
     /// date: 20210307
     /// </summary>
-    public static class Solution131
+    public static partial class Solution131
     {
         // 参考解答 回溯法 记忆搜索法
         public static IList<IList<string>> Partition(string s) {
