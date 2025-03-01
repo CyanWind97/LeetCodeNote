@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/palindrome-partitioning-ii/
     /// date: 20210308
     /// </summary>
-    public static class Solution132
+    public static partial class Solution132
     {
         public static int MinCut(string s) {
             int length = s.Length;
