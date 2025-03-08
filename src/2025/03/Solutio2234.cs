@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LeeCodeNote;
+namespace LeetCodeNote;
 
 /// <summary>
 /// no: 2234
