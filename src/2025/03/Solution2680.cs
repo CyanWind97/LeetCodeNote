@@ -17,7 +17,7 @@ public static class Solution2680
         long orSum = 0, multiBits = 0;
         foreach (int x in nums) {
             multiBits |= x & orSum;
-            orSum |= x;
+            orSum |= (long)x;
         }
         long res = 0;
         foreach (int x in nums) {
