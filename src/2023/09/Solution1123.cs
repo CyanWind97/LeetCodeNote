@@ -7,12 +7,12 @@ namespace LeetCodeNote
 {
     /// <summary>
     /// no: 1123
-    /// title: 从两个数字数组里生成最小数字
+    /// title: 最深叶节点的最近公共祖先
     /// problems: https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/?envType=daily-question&envId=2023-09-06
     /// date: 20230906
     /// </summary>
 
-    public class Solution1123
+    public static partial class Solution1123
     {
         public class TreeNode {
             public int val;
