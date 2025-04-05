@@ -9,7 +9,7 @@ namespace LeetCodeNote
     /// problems: https://leetcode-cn.com/problems/largest-divisible-subset/
     /// date: 20210423
     /// </summary>
-    public static class Solution368
+    public static partial class Solution368
     {
         // 参考解答 dp
         public static IList<int> LargestDivisibleSubset(int[] nums) {
